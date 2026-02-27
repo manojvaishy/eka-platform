@@ -80,7 +80,7 @@ function App() {
 
   return (
     <AppContext.Provider value={contextValue}>
-      <Router>
+      <Router basename="/eka-platform">
         <ScrollToTop />
         <div className="min-h-screen">
           <Routes>
