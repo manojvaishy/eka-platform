@@ -14,7 +14,7 @@ export default defineConfig({
     host: '0.0.0.0', // Allow access from network
     port: 5173,
   },
-  base: '/EKA/', // GitHub Pages base path
+  base: '/eka-platform/', // GitHub Pages base path
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
