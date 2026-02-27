@@ -1,0 +1,434 @@
+[
+  {
+    "id": "1",
+    "user": {
+      "id": "1",
+      "name": "Priya Sharma",
+      "image": "https://i.pravatar.cc/150?img=1",
+      "verified": true
+    },
+    "type": "achievement",
+    "content": "Just earned my first ₹5,000 through Eka! 🎉 Started with tailoring course 3 months ago, now I have 5 regular customers. Thank you Eka family for believing in me! 💜",
+    "achievement": {
+      "type": "first_earning",
+      "title": "First Earning Milestone",
+      "icon": "💰",
+      "amount": 5000
+    },
+    "media": [],
+    "likes": 124,
+    "comments": 18,
+    "isLiked": false,
+    "createdAt": "2024-02-22T10:30:00",
+    "trending": true
+  },
+  {
+    "id": "2",
+    "user": {
+      "id": "2",
+      "name": "Anjali Verma",
+      "image": "https://i.pravatar.cc/150?img=5",
+      "verified": true
+    },
+    "type": "milestone",
+    "content": "Completed 100 makeup bookings! 🌟 From zero to hero in 1 year. Every woman deserves to feel beautiful, and I'm blessed to be part of their special moments. Keep shining sisters! ✨",
+    "achievement": {
+      "type": "service_milestone",
+      "title": "100 Jobs Completed",
+      "icon": "🎯",
+      "count": 100
+    },
+    "media": [
+      {
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600"
+      }
+    ],
+    "likes": 256,
+    "comments": 34,
+    "isLiked": true,
+    "createdAt": "2024-02-21T15:45:00",
+    "trending": true
+  },
+  {
+    "id": "3",
+    "user": {
+      "id": "3",
+      "name": "Meera Devi",
+      "image": "https://i.pravatar.cc/150?img=9",
+      "verified": true
+    },
+    "type": "achievement",
+    "content": "At 45, I became a certified mentor! 👩‍🏫 Age is just a number when you have passion. Now helping 20+ women learn cooking and start their tiffin services. Never too late to learn and teach! 🙏",
+    "achievement": {
+      "type": "mentor_milestone",
+      "title": "Became Mentor",
+      "icon": "👩‍🏫"
+    },
+    "media": [],
+    "likes": 189,
+    "comments": 27,
+    "isLiked": false,
+    "createdAt": "2024-02-20T09:15:00",
+    "trending": true
+  },
+  {
+    "id": "4",
+    "user": {
+      "id": "4",
+      "name": "Kavita Patel",
+      "image": "https://i.pravatar.cc/150?img=10",
+      "verified": false
+    },
+    "type": "text",
+    "content": "Just completed my first digital marketing course! 📱 Feeling so empowered. Planning to start my own online boutique soon. Thank you Eka for making learning so easy and affordable! 💪",
+    "media": [],
+    "likes": 67,
+    "comments": 12,
+    "isLiked": false,
+    "createdAt": "2024-02-22T14:20:00",
+    "trending": false
+  },
+  {
+    "id": "5",
+    "user": {
+      "id": "5",
+      "name": "Sunita Reddy",
+      "image": "https://i.pravatar.cc/150?img=16",
+      "verified": true
+    },
+    "type": "achievement",
+    "content": "Earned ₹25,000 this month from home tuitions! 🎓 Balancing family and career was my dream. Eka made it possible. To all mothers out there - we can do this! 💕",
+    "achievement": {
+      "type": "earning_milestone",
+      "title": "Monthly Earning Goal",
+      "icon": "💵",
+      "amount": 25000
+    },
+    "media": [],
+    "likes": 198,
+    "comments": 23,
+    "isLiked": true,
+    "createdAt": "2024-02-19T11:00:00",
+    "trending": true
+  },
+  {
+    "id": "6",
+    "user": {
+      "id": "6",
+      "name": "Rekha Singh",
+      "image": "https://i.pravatar.cc/150?img=20",
+      "verified": true
+    },
+    "type": "text",
+    "content": "My handmade jewelry is now selling online! 🎨 Started with ₹500 investment, now earning ₹15,000/month. Creativity + Eka platform = Success! Thank you for this opportunity! 🙏✨",
+    "media": [
+      {
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1611652022419-a9419f74343a?w=600"
+      }
+    ],
+    "likes": 145,
+    "comments": 19,
+    "isLiked": false,
+    "createdAt": "2024-02-21T16:30:00",
+    "trending": false
+  },
+  {
+    "id": "7",
+    "user": {
+      "id": "7",
+      "name": "Lakshmi Iyer",
+      "image": "https://i.pravatar.cc/150?img=24",
+      "verified": true
+    },
+    "type": "achievement",
+    "content": "Completed yoga certification at 38! 🧘‍♀️ Now teaching 50+ women daily. Health is wealth, and I'm blessed to share this gift. Age doesn't define us, our passion does! 🌸",
+    "achievement": {
+      "type": "course_completed",
+      "title": "Certification Earned",
+      "icon": "🎓",
+      "course": "Yoga Instructor Training"
+    },
+    "media": [
+      {
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600"
+      }
+    ],
+    "likes": 234,
+    "comments": 31,
+    "isLiked": true,
+    "createdAt": "2024-02-18T08:00:00",
+    "trending": true
+  },
+  {
+    "id": "8",
+    "user": {
+      "id": "8",
+      "name": "Pooja Gupta",
+      "image": "https://i.pravatar.cc/150?img=28",
+      "verified": false
+    },
+    "type": "text",
+    "content": "Got my first freelance writing project! ✍️ ₹3,000 for my first article. Small steps lead to big dreams. Thank you Eka community for constant motivation! 💜",
+    "media": [],
+    "likes": 89,
+    "comments": 15,
+    "isLiked": false,
+    "createdAt": "2024-02-22T12:45:00",
+    "trending": false
+  },
+  {
+    "id": "9",
+    "user": {
+      "name": "Radha Krishnan",
+      "image": "https://i.pravatar.cc/150?img=30",
+      "verified": true
+    },
+    "type": "milestone",
+    "content": "From housewife to entrepreneur! 🚀 My tiffin service now has 30 regular customers. Earning ₹20,000/month while managing home. Dreams do come true! 🌟",
+    "achievement": {
+      "type": "business_milestone",
+      "title": "Business Success",
+      "icon": "🏆"
+    },
+    "media": [],
+    "likes": 312,
+    "comments": 45,
+    "isLiked": true,
+    "createdAt": "2024-02-17T10:00:00",
+    "trending": true
+  },
+  {
+    "id": "10",
+    "user": {
+      "name": "Seema Malik",
+      "image": "https://i.pravatar.cc/150?img=35",
+      "verified": true
+    },
+    "type": "text",
+    "content": "Completed 3 courses in 2 months! 📚 Tailoring, Beauty, and Digital Marketing. Now offering all three services. Eka gave me wings to fly! Thank you! 🦋",
+    "media": [],
+    "likes": 156,
+    "comments": 21,
+    "isLiked": false,
+    "createdAt": "2024-02-20T14:15:00",
+    "trending": false
+  },
+  {
+    "id": "11",
+    "user": {
+      "name": "Simran Bhatia",
+      "image": "https://i.pravatar.cc/150?img=18",
+      "verified": true
+    },
+    "type": "achievement",
+    "content": "My home bakery crossed ₹30,000 revenue this month! 🎂 Started with just ₹2,000 investment. Now have 40+ regular customers. Dreams really do come true! 💕",
+    "achievement": {
+      "type": "business_milestone",
+      "title": "Revenue Milestone",
+      "icon": "💰",
+      "amount": 30000
+    },
+    "media": [
+      {
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600"
+      }
+    ],
+    "likes": 278,
+    "comments": 38,
+    "isLiked": true,
+    "createdAt": "2024-02-23T09:30:00",
+    "trending": true
+  },
+  {
+    "id": "12",
+    "user": {
+      "name": "Fatima Begum",
+      "image": "https://i.pravatar.cc/150?img=26",
+      "verified": true
+    },
+    "type": "milestone",
+    "content": "Completed my 100th embroidery order! 🧵 From struggling to make ends meet to running my own boutique. Eka community gave me strength and skills. Forever grateful! 🙏✨",
+    "achievement": {
+      "type": "service_milestone",
+      "title": "100 Orders Completed",
+      "icon": "🎯",
+      "count": 100
+    },
+    "media": [
+      {
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=600"
+      }
+    ],
+    "likes": 223,
+    "comments": 29,
+    "isLiked": false,
+    "createdAt": "2024-02-22T16:45:00",
+    "trending": true
+  },
+  {
+    "id": "13",
+    "user": {
+      "name": "Divya Khanna",
+      "image": "https://i.pravatar.cc/150?img=30",
+      "verified": true
+    },
+    "type": "text",
+    "content": "Got my first bulk order of 200 candles! 🕯️ A corporate client found me through Eka. This is just the beginning. Thank you for this amazing platform! 🌟",
+    "media": [],
+    "likes": 167,
+    "comments": 24,
+    "isLiked": true,
+    "createdAt": "2024-02-21T11:20:00",
+    "trending": false
+  },
+  {
+    "id": "14",
+    "user": {
+      "name": "Kamla Sharma",
+      "image": "https://i.pravatar.cc/150?img=34",
+      "verified": true
+    },
+    "type": "achievement",
+    "content": "My pickle business is now in 5 cities! 🥭 At 52, I proved age is just a number. Started with Eka courses, now supplying to stores. Never give up sisters! 💪",
+    "achievement": {
+      "type": "business_expansion",
+      "title": "Business Expansion",
+      "icon": "🏆"
+    },
+    "media": [],
+    "likes": 345,
+    "comments": 52,
+    "isLiked": true,
+    "createdAt": "2024-02-19T14:00:00",
+    "trending": true
+  },
+  {
+    "id": "15",
+    "user": {
+      "name": "Ritu Agarwal",
+      "image": "https://i.pravatar.cc/150?img=38",
+      "verified": false
+    },
+    "type": "text",
+    "content": "Earned ₹12,000 from freelance writing this month! ✍️ Working from home while taking care of my kids. Eka made it possible. So grateful! 💜",
+    "media": [],
+    "likes": 134,
+    "comments": 17,
+    "isLiked": false,
+    "createdAt": "2024-02-23T10:15:00",
+    "trending": false
+  },
+  {
+    "id": "16",
+    "user": {
+      "name": "Geeta Nair",
+      "image": "https://i.pravatar.cc/150?img=22",
+      "verified": true
+    },
+    "type": "achievement",
+    "content": "Styled 15 brides this wedding season! 👰 My saree draping service is booming. From housewife to professional stylist in 6 months. Thank you Eka! 🌸",
+    "achievement": {
+      "type": "service_milestone",
+      "title": "Wedding Season Success",
+      "icon": "💐",
+      "count": 15
+    },
+    "media": [
+      {
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600"
+      }
+    ],
+    "likes": 201,
+    "comments": 26,
+    "isLiked": true,
+    "createdAt": "2024-02-20T17:30:00",
+    "trending": true
+  },
+  {
+    "id": "17",
+    "user": {
+      "name": "Priyanka Joshi",
+      "image": "https://i.pravatar.cc/150?img=42",
+      "verified": true
+    },
+    "type": "milestone",
+    "content": "50 women joined my Zumba classes! 💃 Lost 15kg myself and now helping others. Fitness is not just physical, it's mental empowerment. Keep moving sisters! 🔥",
+    "achievement": {
+      "type": "teaching_milestone",
+      "title": "50 Students",
+      "icon": "🎓",
+      "count": 50
+    },
+    "media": [],
+    "likes": 189,
+    "comments": 31,
+    "isLiked": false,
+    "createdAt": "2024-02-21T08:00:00",
+    "trending": false
+  },
+  {
+    "id": "18",
+    "user": {
+      "name": "Neha Kapoor",
+      "image": "https://i.pravatar.cc/150?img=40",
+      "verified": true
+    },
+    "type": "text",
+    "content": "My student got selected in her dream job! 🎉 Teaching English changed my life and now I'm changing others' lives. This is the power of education! 📚✨",
+    "media": [],
+    "likes": 178,
+    "comments": 22,
+    "isLiked": true,
+    "createdAt": "2024-02-22T13:45:00",
+    "trending": false
+  },
+  {
+    "id": "19",
+    "user": {
+      "name": "Madhuri Desai",
+      "image": "https://i.pravatar.cc/150?img=51",
+      "verified": true
+    },
+    "type": "achievement",
+    "content": "Featured in local newspaper for my styling work! 📰 From zero confidence to local celebrity. Eka gave me the platform to showcase my talent. Believe in yourself! 💫",
+    "achievement": {
+      "type": "recognition",
+      "title": "Media Recognition",
+      "icon": "🌟"
+    },
+    "media": [],
+    "likes": 267,
+    "comments": 41,
+    "isLiked": true,
+    "createdAt": "2024-02-18T15:20:00",
+    "trending": true
+  },
+  {
+    "id": "20",
+    "user": {
+      "name": "Savita Joshi",
+      "image": "https://i.pravatar.cc/150?img=36",
+      "verified": true
+    },
+    "type": "milestone",
+    "content": "My tiffin service now has 50 subscribers! 🍱 Earning ₹35,000/month from home. Supporting my family while doing what I love. Thank you Eka family! 🙏💕",
+    "achievement": {
+      "type": "business_milestone",
+      "title": "50 Subscribers",
+      "icon": "🎯",
+      "count": 50
+    },
+    "media": [],
+    "likes": 312,
+    "comments": 47,
+    "isLiked": true,
+    "createdAt": "2024-02-17T12:00:00",
+    "trending": true
+  }
+]

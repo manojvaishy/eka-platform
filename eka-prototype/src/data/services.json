@@ -1,0 +1,573 @@
+[
+  {
+    "id": "1",
+    "provider": {
+      "id": "1",
+      "name": "Priya Sharma",
+      "image": "https://i.pravatar.cc/150?img=1",
+      "verified": true,
+      "trustScore": 4.7,
+      "completedJobs": 23
+    },
+    "title": "Home Tailoring & Alteration Services",
+    "category": "sewing",
+    "description": "Professional tailoring services at your doorstep. Specializing in blouse stitching, salwar kameez, and alterations. Quick turnaround time and quality work guaranteed!",
+    "pricing": {
+      "type": "fixed",
+      "blouseStitching": 300,
+      "salwarKameez": 800,
+      "alterations": 150,
+      "currency": "INR"
+    },
+    "serviceArea": {
+      "type": "radius",
+      "center": "Andheri, Mumbai",
+      "radius": 10
+    },
+    "location": {
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "area": "Andheri West"
+    },
+    "rating": 4.7,
+    "reviewCount": 18,
+    "images": [
+      "https://images.unsplash.com/photo-1558769132-cb1aea1f1d58?w=400"
+    ],
+    "availability": "Mon-Sat, 10 AM - 6 PM",
+    "responseTime": "Within 2 hours",
+    "languages": ["Hindi", "English", "Marathi"]
+  },
+  {
+    "id": "2",
+    "provider": {
+      "id": "2",
+      "name": "Anjali Verma",
+      "image": "https://i.pravatar.cc/150?img=5",
+      "verified": true,
+      "trustScore": 4.9,
+      "completedJobs": 156
+    },
+    "title": "Bridal & Party Makeup Services",
+    "category": "beauty",
+    "description": "Professional makeup artist with 10+ years experience. Specializing in bridal makeup, party makeup, and hair styling. HD makeup and airbrush available. Free trial available!",
+    "pricing": {
+      "type": "custom",
+      "bridalMakeup": 8000,
+      "partyMakeup": 3000,
+      "hairStyling": 2000,
+      "currency": "INR"
+    },
+    "serviceArea": {
+      "type": "radius",
+      "center": "Saket, Delhi",
+      "radius": 15
+    },
+    "location": {
+      "state": "Delhi",
+      "city": "South Delhi",
+      "area": "Saket"
+    },
+    "rating": 4.9,
+    "reviewCount": 89,
+    "images": [
+      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400"
+    ],
+    "availability": "All days, 8 AM - 10 PM",
+    "responseTime": "Within 1 hour",
+    "languages": ["Hindi", "English", "Punjabi"]
+  },
+  {
+    "id": "3",
+    "provider": {
+      "id": "3",
+      "name": "Meera Devi",
+      "image": "https://i.pravatar.cc/150?img=9",
+      "verified": true,
+      "trustScore": 4.8,
+      "completedJobs": 89
+    },
+    "title": "Home Cooked Tiffin Service",
+    "category": "cooking",
+    "description": "Healthy, hygienic home-cooked meals delivered daily. North Indian and South Indian options available. Monthly packages with discount. Perfect for working women and students!",
+    "pricing": {
+      "type": "fixed",
+      "lunch": 100,
+      "dinner": 100,
+      "monthly": 5000,
+      "currency": "INR"
+    },
+    "serviceArea": {
+      "type": "radius",
+      "center": "Gomti Nagar, Lucknow",
+      "radius": 8
+    },
+    "location": {
+      "state": "Uttar Pradesh",
+      "city": "Lucknow",
+      "area": "Gomti Nagar"
+    },
+    "rating": 4.8,
+    "reviewCount": 67,
+    "images": [
+      "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400"
+    ],
+    "availability": "Mon-Sat, Delivery 12-1 PM & 7-8 PM",
+    "responseTime": "Within 3 hours",
+    "languages": ["Hindi", "Urdu"]
+  },
+  {
+    "id": "4",
+    "provider": {
+      "id": "5",
+      "name": "Sunita Reddy",
+      "image": "https://i.pravatar.cc/150?img=16",
+      "verified": true,
+      "trustScore": 4.6,
+      "completedJobs": 67
+    },
+    "title": "Home Tuition for Classes 1-10",
+    "category": "teaching",
+    "description": "Experienced teacher providing home tuition for all subjects. Special focus on English and Mathematics. Patient teaching method with regular tests and progress reports.",
+    "pricing": {
+      "type": "hourly",
+      "perHour": 300,
+      "monthly": 6000,
+      "currency": "INR"
+    },
+    "serviceArea": {
+      "type": "radius",
+      "center": "Banjara Hills, Hyderabad",
+      "radius": 12
+    },
+    "location": {
+      "state": "Telangana",
+      "city": "Hyderabad",
+      "area": "Banjara Hills"
+    },
+    "rating": 4.6,
+    "reviewCount": 45,
+    "images": [
+      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400"
+    ],
+    "availability": "Mon-Sat, 4 PM - 8 PM",
+    "responseTime": "Within 4 hours",
+    "languages": ["Telugu", "English", "Hindi"]
+  },
+  {
+    "id": "5",
+    "provider": {
+      "id": "7",
+      "name": "Lakshmi Iyer",
+      "image": "https://i.pravatar.cc/150?img=24",
+      "verified": true,
+      "trustScore": 4.9,
+      "completedJobs": 134
+    },
+    "title": "Personal Yoga & Fitness Training",
+    "category": "teaching",
+    "description": "Certified yoga instructor offering personal training at home or online. Specializing in weight loss, flexibility, and stress management. Customized programs for all ages.",
+    "pricing": {
+      "type": "custom",
+      "singleSession": 500,
+      "monthlyPackage": 8000,
+      "onlineSession": 300,
+      "currency": "INR"
+    },
+    "serviceArea": {
+      "type": "radius",
+      "center": "T Nagar, Chennai",
+      "radius": 10
+    },
+    "location": {
+      "state": "Tamil Nadu",
+      "city": "Chennai",
+      "area": "T Nagar"
+    },
+    "rating": 4.9,
+    "reviewCount": 98,
+    "images": [
+      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400"
+    ],
+    "availability": "All days, 6 AM - 9 AM, 5 PM - 8 PM",
+    "responseTime": "Within 1 hour",
+    "languages": ["Tamil", "English", "Hindi"]
+  },
+  {
+    "id": "6",
+    "provider": {
+      "id": "6",
+      "name": "Rekha Singh",
+      "image": "https://i.pravatar.cc/150?img=20",
+      "verified": true,
+      "trustScore": 4.5,
+      "completedJobs": 45
+    },
+    "title": "Handmade Jewelry & Handicrafts",
+    "category": "craft",
+    "description": "Beautiful handmade jewelry and handicrafts for all occasions. Custom designs available. Perfect for gifts and home decor. Traditional Rajasthani art with modern touch!",
+    "pricing": {
+      "type": "custom",
+      "earrings": 500,
+      "necklace": 1500,
+      "customOrder": "varies",
+      "currency": "INR"
+    },
+    "serviceArea": {
+      "type": "specific",
+      "areas": ["Jaipur", "Online Orders All India"]
+    },
+    "location": {
+      "state": "Rajasthan",
+      "city": "Jaipur",
+      "area": "Malviya Nagar"
+    },
+    "rating": 4.5,
+    "reviewCount": 34,
+    "images": [
+      "https://images.unsplash.com/photo-1611652022419-a9419f74343a?w=400"
+    ],
+    "availability": "All days, Online orders 24/7",
+    "responseTime": "Within 6 hours",
+    "languages": ["Hindi", "Rajasthani"]
+  },
+  {
+    "id": "7",
+    "provider": {
+      "name": "Kavita Mehta",
+      "image": "https://i.pravatar.cc/150?img=12",
+      "verified": true,
+      "trustScore": 4.4,
+      "completedJobs": 28
+    },
+    "title": "Mehendi Artist for All Occasions",
+    "category": "beauty",
+    "description": "Professional mehendi artist for weddings, festivals, and parties. Traditional and modern designs. Bridal mehendi specialist. Natural henna used for dark color!",
+    "pricing": {
+      "type": "custom",
+      "bridalMehendi": 5000,
+      "guestMehendi": 500,
+      "simpleMehendi": 300,
+      "currency": "INR"
+    },
+    "serviceArea": {
+      "type": "radius",
+      "center": "Satellite, Ahmedabad",
+      "radius": 15
+    },
+    "location": {
+      "state": "Gujarat",
+      "city": "Ahmedabad",
+      "area": "Satellite"
+    },
+    "rating": 4.4,
+    "reviewCount": 22,
+    "images": [
+      "https://images.unsplash.com/photo-1610735794418-c7c8e1f3e8f1?w=400"
+    ],
+    "availability": "All days, Advance booking required",
+    "responseTime": "Within 2 hours",
+    "languages": ["Gujarati", "Hindi", "English"]
+  },
+  {
+    "id": "8",
+    "provider": {
+      "name": "Nisha Kapoor",
+      "image": "https://i.pravatar.cc/150?img=14",
+      "verified": false,
+      "trustScore": 4.2,
+      "completedJobs": 12
+    },
+    "title": "Social Media Management for Small Business",
+    "category": "digital",
+    "description": "Help your business grow online! Social media management, content creation, and digital marketing services. Affordable packages for small businesses and women entrepreneurs.",
+    "pricing": {
+      "type": "fixed",
+      "basicPackage": 5000,
+      "standardPackage": 10000,
+      "premiumPackage": 15000,
+      "currency": "INR"
+    },
+    "serviceArea": {
+      "type": "specific",
+      "areas": ["Online - All India"]
+    },
+    "location": {
+      "state": "Remote",
+      "city": "Work from Home",
+      "area": "Online"
+    },
+    "rating": 4.2,
+    "reviewCount": 8,
+    "images": [
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400"
+    ],
+    "availability": "Mon-Sat, 10 AM - 6 PM",
+    "responseTime": "Within 4 hours",
+    "languages": ["Hindi", "English"]
+  },
+  {
+    "id": "9",
+    "provider": {
+      "name": "Simran Bhatia",
+      "image": "https://i.pravatar.cc/150?img=18",
+      "verified": true,
+      "trustScore": 4.7,
+      "completedJobs": 78
+    },
+    "title": "Home Bakery - Cakes & Pastries",
+    "category": "cooking",
+    "description": "Delicious homemade cakes, pastries, and cookies for all occasions. Custom designs available. Eggless options. Fresh ingredients and hygienic preparation guaranteed!",
+    "pricing": {
+      "type": "custom",
+      "poundCake": 600,
+      "customCake": 1200,
+      "pastries": 50,
+      "cookies": 300,
+      "currency": "INR"
+    },
+    "serviceArea": {
+      "type": "radius",
+      "center": "Sector 62, Noida",
+      "radius": 10
+    },
+    "location": {
+      "state": "Uttar Pradesh",
+      "city": "Noida",
+      "area": "Sector 62"
+    },
+    "rating": 4.7,
+    "reviewCount": 56,
+    "images": [
+      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400"
+    ],
+    "availability": "All days, Order 2 days in advance",
+    "responseTime": "Within 2 hours",
+    "languages": ["Hindi", "English", "Punjabi"]
+  },
+  {
+    "id": "10",
+    "provider": {
+      "name": "Geeta Nair",
+      "image": "https://i.pravatar.cc/150?img=22",
+      "verified": true,
+      "trustScore": 4.5,
+      "completedJobs": 34
+    },
+    "title": "Saree Draping & Styling Services",
+    "category": "beauty",
+    "description": "Professional saree draping for weddings and events. Know 25+ draping styles including Bengali, Gujarati, Maharashtrian, and modern styles. Hair styling included!",
+    "pricing": {
+      "type": "fixed",
+      "bridalDraping": 2000,
+      "partyDraping": 800,
+      "withHairStyling": 1500,
+      "currency": "INR"
+    },
+    "serviceArea": {
+      "type": "radius",
+      "center": "Whitefield, Bangalore",
+      "radius": 12
+    },
+    "location": {
+      "state": "Karnataka",
+      "city": "Bangalore",
+      "area": "Whitefield"
+    },
+    "rating": 4.5,
+    "reviewCount": 28,
+    "images": [
+      "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400"
+    ],
+    "availability": "All days, Advance booking required",
+    "responseTime": "Within 3 hours",
+    "languages": ["Kannada", "Tamil", "English", "Hindi"]
+  },
+  {
+    "id": "11",
+    "provider": {
+      "name": "Fatima Begum",
+      "image": "https://i.pravatar.cc/150?img=26",
+      "verified": true,
+      "trustScore": 4.8,
+      "completedJobs": 112
+    },
+    "title": "Embroidery & Boutique Services",
+    "category": "sewing",
+    "description": "Exquisite hand embroidery and machine embroidery work. Specializing in bridal blouses, lehengas, and designer wear. Custom designs and alterations available.",
+    "pricing": {
+      "type": "custom",
+      "blouseEmbroidery": 1500,
+      "lehengaEmbroidery": 5000,
+      "customWork": "varies",
+      "currency": "INR"
+    },
+    "serviceArea": {
+      "type": "radius",
+      "center": "Old City, Hyderabad",
+      "radius": 8
+    },
+    "location": {
+      "state": "Telangana",
+      "city": "Hyderabad",
+      "area": "Old City"
+    },
+    "rating": 4.8,
+    "reviewCount": 87,
+    "images": [
+      "https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=400"
+    ],
+    "availability": "Mon-Sat, 10 AM - 7 PM",
+    "responseTime": "Within 2 hours",
+    "languages": ["Urdu", "Hindi", "Telugu"]
+  },
+  {
+    "id": "12",
+    "provider": {
+      "name": "Divya Khanna",
+      "image": "https://i.pravatar.cc/150?img=30",
+      "verified": true,
+      "trustScore": 4.6,
+      "completedJobs": 56
+    },
+    "title": "Handmade Candles & Home Decor",
+    "category": "craft",
+    "description": "Beautiful handmade scented candles and home decor items. Perfect for gifts and home decoration. Custom orders for weddings and events. Eco-friendly products!",
+    "pricing": {
+      "type": "custom",
+      "scentedCandle": 300,
+      "decorativeCandle": 500,
+      "giftSet": 1500,
+      "currency": "INR"
+    },
+    "serviceArea": {
+      "type": "specific",
+      "areas": ["Indore", "Online Orders All India"]
+    },
+    "location": {
+      "state": "Madhya Pradesh",
+      "city": "Indore",
+      "area": "Vijay Nagar"
+    },
+    "rating": 4.6,
+    "reviewCount": 42,
+    "images": [
+      "https://images.unsplash.com/photo-1602874801006-e24aa9b5e481?w=400"
+    ],
+    "availability": "All days, Online orders 24/7",
+    "responseTime": "Within 5 hours",
+    "languages": ["Hindi", "English"]
+  },
+  {
+    "id": "13",
+    "provider": {
+      "name": "Kamla Sharma",
+      "image": "https://i.pravatar.cc/150?img=34",
+      "verified": true,
+      "trustScore": 4.9,
+      "completedJobs": 145
+    },
+    "title": "Traditional Pickles & Papad",
+    "category": "cooking",
+    "description": "Authentic homemade pickles and papad made with traditional recipes. No preservatives. Mango, lemon, chilli pickles and various papad varieties. Bulk orders welcome!",
+    "pricing": {
+      "type": "fixed",
+      "pickleJar": 250,
+      "papadPack": 100,
+      "comboOffer": 800,
+      "currency": "INR"
+    },
+    "serviceArea": {
+      "type": "specific",
+      "areas": ["Nagpur", "Online Orders All India"]
+    },
+    "location": {
+      "state": "Maharashtra",
+      "city": "Nagpur",
+      "area": "Dharampeth"
+    },
+    "rating": 4.9,
+    "reviewCount": 123,
+    "images": [
+      "https://images.unsplash.com/photo-1596040033229-a0b3b83b6a1f?w=400"
+    ],
+    "availability": "All days, Online orders 24/7",
+    "responseTime": "Within 6 hours",
+    "languages": ["Hindi", "Marathi"]
+  },
+  {
+    "id": "14",
+    "provider": {
+      "name": "Ritu Agarwal",
+      "image": "https://i.pravatar.cc/150?img=38",
+      "verified": true,
+      "trustScore": 4.4,
+      "completedJobs": 29
+    },
+    "title": "Freelance Content Writing Services",
+    "category": "digital",
+    "description": "Professional content writing for blogs, websites, and social media. SEO-friendly content in Hindi and English. Fast turnaround time. Affordable rates for startups!",
+    "pricing": {
+      "type": "fixed",
+      "blogPost": 500,
+      "websiteContent": 1000,
+      "socialMediaPack": 2000,
+      "currency": "INR"
+    },
+    "serviceArea": {
+      "type": "specific",
+      "areas": ["Online - All India"]
+    },
+    "location": {
+      "state": "Remote",
+      "city": "Work from Home",
+      "area": "Online"
+    },
+    "rating": 4.4,
+    "reviewCount": 21,
+    "images": [
+      "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=400"
+    ],
+    "availability": "Mon-Sat, 9 AM - 6 PM",
+    "responseTime": "Within 3 hours",
+    "languages": ["Hindi", "English"]
+  },
+  {
+    "id": "15",
+    "provider": {
+      "name": "Priyanka Joshi",
+      "image": "https://i.pravatar.cc/150?img=42",
+      "verified": true,
+      "trustScore": 4.7,
+      "completedJobs": 67
+    },
+    "title": "Zumba & Dance Fitness Classes",
+    "category": "teaching",
+    "description": "Fun and energetic Zumba classes for ladies. Online and offline classes available. Weight loss programs and group sessions. Certified instructor with 5 years experience!",
+    "pricing": {
+      "type": "fixed",
+      "singleClass": 300,
+      "monthlyPackage": 3000,
+      "onlineClass": 200,
+      "currency": "INR"
+    },
+    "serviceArea": {
+      "type": "radius",
+      "center": "Vastrapur, Ahmedabad",
+      "radius": 10
+    },
+    "location": {
+      "state": "Gujarat",
+      "city": "Ahmedabad",
+      "area": "Vastrapur"
+    },
+    "rating": 4.7,
+    "reviewCount": 54,
+    "images": [
+      "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400"
+    ],
+    "availability": "Mon-Sat, 7 AM - 9 AM, 6 PM - 8 PM",
+    "responseTime": "Within 2 hours",
+    "languages": ["Gujarati", "Hindi", "English"]
+  }
+]

@@ -1,0 +1,557 @@
+[
+  {
+    "id": "1",
+    "title": "Tailor for Ladies Boutique",
+    "thumbnail": "https://images.unsplash.com/photo-1558769132-cb1aea1f1d58?w=400",
+    "employer": {
+      "id": "emp1",
+      "name": "Elegant Fashions",
+      "verified": true,
+      "logo": "https://ui-avatars.com/api/?name=Elegant+Fashions&background=d946ef&color=fff",
+      "location": "Mumbai, Maharashtra"
+    },
+    "description": "Looking for experienced tailor for our boutique in Andheri. Must have experience in blouse stitching, salwar kameez, and alterations. Friendly work environment with all women staff.",
+    "category": "sewing",
+    "location": {
+      "state": "Maharashtra",
+      "district": "Mumbai",
+      "city": "Andheri West",
+      "pincode": "400053",
+      "distance": 2.5
+    },
+    "salary": {
+      "min": 15000,
+      "max": 25000,
+      "currency": "INR"
+    },
+    "type": "full_time",
+    "postedAt": "2024-02-20",
+    "expiresAt": "2024-03-20",
+    "applicants": 12,
+    "openings": 2,
+    "skills": ["Stitching", "Pattern Making", "Alterations"],
+    "experience": "2-5 years",
+    "education": "10th Pass or above",
+    "benefits": ["PF", "Paid Leave", "Festival Bonus"],
+    "workingHours": "10 AM - 6 PM",
+    "status": "active"
+  },
+  {
+    "id": "2",
+    "title": "Beauty Parlour Staff - Makeup Artist",
+    "thumbnail": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400",
+    "employer": {
+      "id": "emp2",
+      "name": "Glamour Beauty Salon",
+      "verified": true,
+      "logo": "https://ui-avatars.com/api/?name=Glamour+Beauty&background=f97316&color=fff",
+      "location": "Delhi"
+    },
+    "description": "Urgently required makeup artist for busy salon in Saket. Must know bridal makeup, party makeup, and hair styling. Good earning potential with commission on services.",
+    "category": "beauty",
+    "location": {
+      "state": "Delhi",
+      "district": "South Delhi",
+      "city": "Saket",
+      "pincode": "110017",
+      "distance": 5.0
+    },
+    "salary": {
+      "min": 18000,
+      "max": 35000,
+      "currency": "INR"
+    },
+    "type": "full_time",
+    "postedAt": "2024-02-21",
+    "expiresAt": "2024-03-15",
+    "applicants": 8,
+    "openings": 1,
+    "skills": ["Makeup", "Hair Styling", "Bridal Makeup"],
+    "experience": "1-3 years",
+    "education": "Any",
+    "benefits": ["Commission", "Tips", "Product Discount"],
+    "workingHours": "11 AM - 8 PM",
+    "status": "active"
+  },
+  {
+    "id": "3",
+    "title": "Home Tutor for Classes 1-5",
+    "thumbnail": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400",
+    "employer": {
+      "id": "emp3",
+      "name": "Bright Future Academy",
+      "verified": true,
+      "logo": "https://ui-avatars.com/api/?name=Bright+Future&background=22c55e&color=fff",
+      "location": "Bangalore"
+    },
+    "description": "Need female home tutor for primary classes. Must be patient and good with children. Flexible timings available. Can work from home or visit students.",
+    "category": "teaching",
+    "location": {
+      "state": "Karnataka",
+      "district": "Bangalore",
+      "city": "Koramangala",
+      "pincode": "560034",
+      "distance": 3.2
+    },
+    "salary": {
+      "min": 12000,
+      "max": 20000,
+      "currency": "INR"
+    },
+    "type": "part_time",
+    "postedAt": "2024-02-19",
+    "expiresAt": "2024-03-10",
+    "applicants": 15,
+    "openings": 3,
+    "skills": ["Teaching", "English", "Mathematics"],
+    "experience": "0-2 years",
+    "education": "Graduate",
+    "benefits": ["Flexible Hours", "Work from Home Option"],
+    "workingHours": "4 PM - 7 PM",
+    "status": "active"
+  },
+  {
+    "id": "4",
+    "title": "Cook for Tiffin Service",
+    "thumbnail": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400",
+    "employer": {
+      "id": "emp4",
+      "name": "Ghar Ka Khana Tiffin Service",
+      "verified": false,
+      "logo": "https://ui-avatars.com/api/?name=Ghar+Ka+Khana&background=ec4899&color=fff",
+      "location": "Pune"
+    },
+    "description": "Looking for experienced cook for tiffin service. Must know North Indian and South Indian cooking. Morning shift only. Good salary and food provided.",
+    "category": "cooking",
+    "location": {
+      "state": "Maharashtra",
+      "district": "Pune",
+      "city": "Kothrud",
+      "pincode": "411038",
+      "distance": 4.5
+    },
+    "salary": {
+      "min": 10000,
+      "max": 15000,
+      "currency": "INR"
+    },
+    "type": "part_time",
+    "postedAt": "2024-02-18",
+    "expiresAt": "2024-03-05",
+    "applicants": 6,
+    "openings": 2,
+    "skills": ["Cooking", "North Indian Cuisine", "South Indian Cuisine"],
+    "experience": "1-3 years",
+    "education": "Any",
+    "benefits": ["Food Provided", "Sunday Off"],
+    "workingHours": "7 AM - 12 PM",
+    "status": "active"
+  },
+  {
+    "id": "5",
+    "title": "Digital Marketing Executive",
+    "thumbnail": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400",
+    "employer": {
+      "id": "emp5",
+      "name": "Women Entrepreneurs Hub",
+      "verified": true,
+      "logo": "https://ui-avatars.com/api/?name=WE+Hub&background=14b8a6&color=fff",
+      "location": "Hyderabad"
+    },
+    "description": "Exciting opportunity for women interested in digital marketing. Will train freshers. Must know social media basics. Work with women-led startups.",
+    "category": "digital",
+    "location": {
+      "state": "Telangana",
+      "district": "Hyderabad",
+      "city": "Banjara Hills",
+      "pincode": "500034",
+      "distance": 6.0
+    },
+    "salary": {
+      "min": 15000,
+      "max": 25000,
+      "currency": "INR"
+    },
+    "type": "full_time",
+    "postedAt": "2024-02-22",
+    "expiresAt": "2024-03-22",
+    "applicants": 20,
+    "openings": 2,
+    "skills": ["Digital Marketing", "Social Media", "Content Writing"],
+    "experience": "0-1 years",
+    "education": "Graduate",
+    "benefits": ["Training Provided", "Career Growth", "Laptop Provided"],
+    "workingHours": "10 AM - 6 PM",
+    "status": "active"
+  },
+  {
+    "id": "6",
+    "title": "Yoga Instructor for Ladies Gym",
+    "thumbnail": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400",
+    "employer": {
+      "id": "emp6",
+      "name": "FitWomen Wellness Center",
+      "verified": true,
+      "logo": "https://ui-avatars.com/api/?name=FitWomen&background=a21caf&color=fff",
+      "location": "Chennai"
+    },
+    "description": "Need certified yoga instructor for ladies-only gym. Morning and evening batches. Must have certification and good communication skills.",
+    "category": "teaching",
+    "location": {
+      "state": "Tamil Nadu",
+      "district": "Chennai",
+      "city": "T Nagar",
+      "pincode": "600017",
+      "distance": 2.8
+    },
+    "salary": {
+      "min": 20000,
+      "max": 30000,
+      "currency": "INR"
+    },
+    "type": "full_time",
+    "postedAt": "2024-02-21",
+    "expiresAt": "2024-03-21",
+    "applicants": 9,
+    "openings": 1,
+    "skills": ["Yoga", "Fitness Training", "Communication"],
+    "experience": "2-4 years",
+    "education": "Yoga Certification Required",
+    "benefits": ["Free Gym Membership", "Health Insurance"],
+    "workingHours": "6 AM - 10 AM, 5 PM - 8 PM",
+    "status": "active"
+  },
+  {
+    "id": "7",
+    "title": "Handicraft Designer & Maker",
+    "thumbnail": "https://images.unsplash.com/photo-1452860606245-08befc0ff44b?w=400",
+    "employer": {
+      "id": "emp7",
+      "name": "Rajasthani Crafts Emporium",
+      "verified": true,
+      "logo": "https://ui-avatars.com/api/?name=Rajasthani+Crafts&background=fbbf24&color=000",
+      "location": "Jaipur"
+    },
+    "description": "Looking for skilled handicraft makers for our emporium. Must know traditional Rajasthani crafts. Work from home option available. Payment per piece.",
+    "category": "craft",
+    "location": {
+      "state": "Rajasthan",
+      "district": "Jaipur",
+      "city": "Malviya Nagar",
+      "pincode": "302017",
+      "distance": 1.5
+    },
+    "salary": {
+      "min": 12000,
+      "max": 25000,
+      "currency": "INR"
+    },
+    "type": "freelance",
+    "postedAt": "2024-02-20",
+    "expiresAt": "2024-04-20",
+    "applicants": 7,
+    "openings": 5,
+    "skills": ["Handicrafts", "Embroidery", "Design"],
+    "experience": "1-5 years",
+    "education": "Any",
+    "benefits": ["Work from Home", "Flexible Hours", "Material Provided"],
+    "workingHours": "Flexible",
+    "status": "active"
+  },
+  {
+    "id": "8",
+    "title": "Content Writer (Hindi & English)",
+    "thumbnail": "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=400",
+    "employer": {
+      "id": "emp8",
+      "name": "Desi Stories Media",
+      "verified": false,
+      "logo": "https://ui-avatars.com/api/?name=Desi+Stories&background=c026d3&color=fff",
+      "location": "Remote"
+    },
+    "description": "Remote opportunity for content writers. Must be fluent in Hindi and English. Write articles, blogs, and social media content. Perfect for work from home.",
+    "category": "digital",
+    "location": {
+      "state": "Remote",
+      "district": "Work from Home",
+      "city": "Anywhere in India",
+      "pincode": "000000",
+      "distance": 0
+    },
+    "salary": {
+      "min": 10000,
+      "max": 20000,
+      "currency": "INR"
+    },
+    "type": "remote",
+    "postedAt": "2024-02-22",
+    "expiresAt": "2024-03-30",
+    "applicants": 25,
+    "openings": 3,
+    "skills": ["Content Writing", "Hindi", "English"],
+    "experience": "0-2 years",
+    "education": "Graduate",
+    "benefits": ["Work from Home", "Flexible Hours", "Performance Bonus"],
+    "workingHours": "Flexible",
+    "status": "active"
+  },
+  {
+    "id": "9",
+    "title": "Mehendi Artist for Wedding Season",
+    "thumbnail": "https://images.unsplash.com/photo-1610735794418-c7c8e1f3e8f1?w=400",
+    "employer": {
+      "id": "emp9",
+      "name": "Royal Weddings & Events",
+      "verified": true,
+      "logo": "https://ui-avatars.com/api/?name=Royal+Weddings&background=fbbf24&color=000",
+      "location": "Jaipur"
+    },
+    "description": "Seasonal opportunity for mehendi artists. Wedding season work with excellent pay. Must know bridal mehendi designs. Accommodation provided for outstation events.",
+    "category": "beauty",
+    "location": {
+      "state": "Rajasthan",
+      "district": "Jaipur",
+      "city": "C-Scheme",
+      "pincode": "302001",
+      "distance": 3.5
+    },
+    "salary": {
+      "min": 25000,
+      "max": 50000,
+      "currency": "INR"
+    },
+    "type": "contract",
+    "postedAt": "2024-02-23",
+    "expiresAt": "2024-03-25",
+    "applicants": 14,
+    "openings": 5,
+    "skills": ["Mehendi", "Bridal Design", "Traditional Art"],
+    "experience": "2-5 years",
+    "education": "Any",
+    "benefits": ["High Pay", "Accommodation", "Food Provided", "Travel Allowance"],
+    "workingHours": "Event Based",
+    "status": "active"
+  },
+  {
+    "id": "10",
+    "title": "Baker for Home Bakery",
+    "thumbnail": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400",
+    "employer": {
+      "id": "emp10",
+      "name": "Sweet Treats Bakery",
+      "verified": true,
+      "logo": "https://ui-avatars.com/api/?name=Sweet+Treats&background=ec4899&color=fff",
+      "location": "Kolkata"
+    },
+    "description": "Need experienced baker for growing home bakery. Must know cakes, pastries, and cookies. Flexible hours. Great for mothers looking for part-time work.",
+    "category": "cooking",
+    "location": {
+      "state": "West Bengal",
+      "district": "Kolkata",
+      "city": "Salt Lake",
+      "pincode": "700091",
+      "distance": 4.2
+    },
+    "salary": {
+      "min": 12000,
+      "max": 18000,
+      "currency": "INR"
+    },
+    "type": "part_time",
+    "postedAt": "2024-02-21",
+    "expiresAt": "2024-03-15",
+    "applicants": 11,
+    "openings": 2,
+    "skills": ["Baking", "Cake Decoration", "Pastry Making"],
+    "experience": "1-3 years",
+    "education": "Any",
+    "benefits": ["Flexible Hours", "Take Home Samples", "Festival Bonus"],
+    "workingHours": "9 AM - 2 PM",
+    "status": "active"
+  },
+  {
+    "id": "11",
+    "title": "Embroidery Worker for Boutique",
+    "thumbnail": "https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=400",
+    "employer": {
+      "id": "emp11",
+      "name": "Designer Boutique",
+      "verified": true,
+      "logo": "https://ui-avatars.com/api/?name=Designer+Boutique&background=a21caf&color=fff",
+      "location": "Lucknow"
+    },
+    "description": "Looking for skilled embroidery workers. Hand embroidery and machine embroidery both needed. Work from home option available. Payment per piece.",
+    "category": "sewing",
+    "location": {
+      "state": "Uttar Pradesh",
+      "district": "Lucknow",
+      "city": "Hazratganj",
+      "pincode": "226001",
+      "distance": 2.0
+    },
+    "salary": {
+      "min": 10000,
+      "max": 20000,
+      "currency": "INR"
+    },
+    "type": "freelance",
+    "postedAt": "2024-02-20",
+    "expiresAt": "2024-04-20",
+    "applicants": 18,
+    "openings": 10,
+    "skills": ["Embroidery", "Hand Work", "Machine Work"],
+    "experience": "1-5 years",
+    "education": "Any",
+    "benefits": ["Work from Home", "Flexible Hours", "Material Provided"],
+    "workingHours": "Flexible",
+    "status": "active"
+  },
+  {
+    "id": "12",
+    "title": "Social Media Manager - Remote",
+    "thumbnail": "https://images.unsplash.com/photo-1432888622747-4eb9a8f2c293?w=400",
+    "employer": {
+      "id": "emp12",
+      "name": "Women Startup Network",
+      "verified": true,
+      "logo": "https://ui-avatars.com/api/?name=WSN&background=14b8a6&color=fff",
+      "location": "Remote"
+    },
+    "description": "Manage social media for women-led startups. Create content, schedule posts, engage with audience. Perfect work from home opportunity. Training provided.",
+    "category": "digital",
+    "location": {
+      "state": "Remote",
+      "district": "Work from Home",
+      "city": "Anywhere in India",
+      "pincode": "000000",
+      "distance": 0
+    },
+    "salary": {
+      "min": 15000,
+      "max": 25000,
+      "currency": "INR"
+    },
+    "type": "remote",
+    "postedAt": "2024-02-23",
+    "expiresAt": "2024-03-23",
+    "applicants": 32,
+    "openings": 4,
+    "skills": ["Social Media", "Content Creation", "Canva"],
+    "experience": "0-2 years",
+    "education": "Graduate",
+    "benefits": ["Work from Home", "Flexible Hours", "Training", "Laptop Provided"],
+    "workingHours": "Flexible",
+    "status": "active"
+  },
+  {
+    "id": "13",
+    "title": "Zumba Instructor for Ladies Fitness",
+    "thumbnail": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400",
+    "employer": {
+      "id": "emp13",
+      "name": "Dance Fitness Studio",
+      "verified": true,
+      "logo": "https://ui-avatars.com/api/?name=Dance+Fitness&background=f97316&color=fff",
+      "location": "Ahmedabad"
+    },
+    "description": "Need energetic Zumba instructor for ladies-only classes. Morning and evening batches. Certification preferred but will train the right candidate.",
+    "category": "teaching",
+    "location": {
+      "state": "Gujarat",
+      "district": "Ahmedabad",
+      "city": "Satellite",
+      "pincode": "380015",
+      "distance": 3.8
+    },
+    "salary": {
+      "min": 18000,
+      "max": 28000,
+      "currency": "INR"
+    },
+    "type": "part_time",
+    "postedAt": "2024-02-22",
+    "expiresAt": "2024-03-20",
+    "applicants": 9,
+    "openings": 2,
+    "skills": ["Zumba", "Dance", "Fitness"],
+    "experience": "0-2 years",
+    "education": "Any",
+    "benefits": ["Free Classes", "Flexible Timing", "Performance Bonus"],
+    "workingHours": "7 AM - 9 AM, 6 PM - 8 PM",
+    "status": "active"
+  },
+  {
+    "id": "14",
+    "title": "Candle Making Production Worker",
+    "thumbnail": "https://images.unsplash.com/photo-1603006905003-be475563bc59?w=400",
+    "employer": {
+      "id": "emp14",
+      "name": "Aromatic Candles Co.",
+      "verified": false,
+      "logo": "https://ui-avatars.com/api/?name=Aromatic+Candles&background=22c55e&color=fff",
+      "location": "Indore"
+    },
+    "description": "Looking for women to make handmade candles. Will provide training. Work from home or at our workshop. Payment per piece. Great for earning extra income.",
+    "category": "craft",
+    "location": {
+      "state": "Madhya Pradesh",
+      "district": "Indore",
+      "city": "Vijay Nagar",
+      "pincode": "452010",
+      "distance": 5.5
+    },
+    "salary": {
+      "min": 8000,
+      "max": 15000,
+      "currency": "INR"
+    },
+    "type": "freelance",
+    "postedAt": "2024-02-19",
+    "expiresAt": "2024-03-19",
+    "applicants": 16,
+    "openings": 8,
+    "skills": ["Candle Making", "Crafts", "Attention to Detail"],
+    "experience": "0-1 years",
+    "education": "Any",
+    "benefits": ["Training Provided", "Work from Home Option", "Material Provided"],
+    "workingHours": "Flexible",
+    "status": "active"
+  },
+  {
+    "id": "15",
+    "title": "Pickle & Papad Business Partner",
+    "thumbnail": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=400",
+    "employer": {
+      "id": "emp15",
+      "name": "Desi Flavors Food Products",
+      "verified": true,
+      "logo": "https://ui-avatars.com/api/?name=Desi+Flavors&background=d946ef&color=fff",
+      "location": "Nagpur"
+    },
+    "description": "Looking for women to make traditional pickles and papad at home. We provide recipes and buy back products. Perfect for housewives to earn from home.",
+    "category": "cooking",
+    "location": {
+      "state": "Maharashtra",
+      "district": "Nagpur",
+      "city": "Dharampeth",
+      "pincode": "440010",
+      "distance": 4.0
+    },
+    "salary": {
+      "min": 10000,
+      "max": 25000,
+      "currency": "INR"
+    },
+    "type": "freelance",
+    "postedAt": "2024-02-21",
+    "expiresAt": "2024-04-21",
+    "applicants": 22,
+    "openings": 15,
+    "skills": ["Cooking", "Traditional Recipes", "Food Preparation"],
+    "experience": "Any",
+    "education": "Any",
+    "benefits": ["Work from Home", "Flexible Hours", "Guaranteed Buyback", "Training"],
+    "workingHours": "Flexible",
+    "status": "active"
+  }
+]
