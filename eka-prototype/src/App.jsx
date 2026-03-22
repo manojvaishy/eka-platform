@@ -46,24 +46,13 @@ function App() {
       if (savedUser) {
         try {
           const userData = JSON.parse(savedUser);
-          console.log('App: User data updated from localStorage:', userData.name);
           setCurrentUser(userData);
-        } catch (e) {
-          console.error('Error parsing user data:', e);
-        }
+        } catch (e) {}
       }
     };
-
-    // Listen for storage events
     window.addEventListener('storage', handleStorageChange);
-    
-    // Also check on mount
-    handleStorageChange();
-
-    return () => {
-      window.removeEventListener('storage', handleStorageChange);
-    };
-  }, []);
+    return () => window.removeEventListener('storage', handleStorageChange);
+  }, []); // empty deps - no loop
 
   // Global state
   const contextValue = {

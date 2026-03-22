@@ -10,31 +10,28 @@ import {
 function DashboardPage() {
   const { currentUser: contextUser, setCurrentUser, courses, jobs, posts } = useContext(AppContext);
   
-  // Local state to force re-render with localStorage data
-  const [displayUser, setDisplayUser] = useState(contextUser);
+  const [displayUser, setDisplayUser] = useState(() => {
+    const savedUserData = localStorage.getItem('userData');
+    if (savedUserData) {
+      try { return JSON.parse(savedUserData); } catch(e) {}
+    }
+    return contextUser;
+  });
 
-  // Load user data from localStorage on mount
+  // Only run once on mount - no dependencies that cause loop
   useEffect(() => {
     const savedUserData = localStorage.getItem('userData');
     if (savedUserData) {
-      const userData = JSON.parse(savedUserData);
-      console.log('Dashboard: Loading user from localStorage:', userData.name);
-      setDisplayUser(userData);
-      if (setCurrentUser) {
-        setCurrentUser(userData); // Update context too if available
-      }
-    } else {
-      console.log('Dashboard: No saved data, using context user:', contextUser?.name || 'Unknown');
-      setDisplayUser(contextUser);
+      try {
+        const userData = JSON.parse(savedUserData);
+        setDisplayUser(userData);
+      } catch(e) {}
     }
-  }, [contextUser, setCurrentUser]);
+  }, []); // empty deps - run once only
 
-  // Get first name from full name
   const getFirstName = () => {
     if (!displayUser || !displayUser.name) return 'User';
-    const firstName = displayUser.name.split(' ')[0];
-    console.log('Dashboard: Displaying name:', firstName);
-    return firstName;
+    return displayUser.name.split(' ')[0];
   };
 
   // Safety check - if no user data, show loading
