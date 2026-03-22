@@ -50,9 +50,14 @@ function LandingPage() {
                 <Link to="/login" className="btn-primary text-lg px-8 py-4">
                   Start Your Journey
                 </Link>
-                <button className="btn-outline text-lg px-8 py-4">
-                  Watch Video
-                </button>
+                <a 
+                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="btn-outline text-lg px-8 py-4 flex items-center justify-center gap-2"
+                >
+                  ▶ Watch Video
+                </a>
               </div>
               <div className="mt-8 flex gap-8">
                 <div>

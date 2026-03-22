@@ -167,9 +167,9 @@ function DashboardPage() {
                         <span className="text-sm font-semibold text-gray-700">45%</span>
                       </div>
                     </div>
-                    <button className="btn-primary px-4 py-2 text-sm">
+                    <Link to="/courses" className="btn-primary px-4 py-2 text-sm self-center">
                       Continue
-                    </button>
+                    </Link>
                   </div>
                 ))}
               </div>
@@ -209,7 +209,7 @@ function DashboardPage() {
                       <span className="font-bold text-primary-600">
                         ₹{job.salary.min.toLocaleString()} - ₹{job.salary.max.toLocaleString()}
                       </span>
-                      <button className="btn-outline px-3 py-1 text-sm">Apply</button>
+                      <Link to="/jobs" className="btn-outline px-3 py-1 text-sm">Apply</Link>
                     </div>
                   </div>
                 ))}

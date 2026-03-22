@@ -209,9 +209,10 @@ function EnhancedProfilePage() {
                   <CheckCircle className="w-6 h-6 text-white" />
                 </div>
               )}
-              <button className="absolute top-0 right-0 w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center shadow-lg hover:bg-primary-600 transition">
+              <label className="absolute top-0 right-0 w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center shadow-lg hover:bg-primary-600 transition cursor-pointer">
                 <Camera className="w-5 h-5 text-white" />
-              </button>
+                <input type="file" accept="image/*" className="hidden" onChange={handleImageUpload} />
+              </label>
             </div>
 
             {/* Profile Info */}

@@ -16,7 +16,17 @@ function JobsPage() {
   const [showFilters, setShowFilters] = useState(false);
   const [selectedJob, setSelectedJob] = useState(null);
   const [showApplicationModal, setShowApplicationModal] = useState(false);
-  const [activeTab, setActiveTab] = useState('browse'); // browse, applied, saved
+  const [activeTab, setActiveTab] = useState('browse');
+  const [savedJobs, setSavedJobs] = useState(new Set());
+
+  const toggleSaveJob = (e, jobId) => {
+    e.stopPropagation();
+    setSavedJobs(prev => {
+      const next = new Set(prev);
+      next.has(jobId) ? next.delete(jobId) : next.add(jobId);
+      return next;
+    });
+  };
 
   const categories = [
     { id: 'all', name: 'All Jobs', icon: '💼' },
@@ -240,8 +250,11 @@ function JobsPage() {
                             )}
                           </div>
                         </div>
-                        <button className="p-2 hover:bg-gray-100 rounded-full">
-                          <Heart className="w-5 h-5 text-gray-400" />
+                        <button 
+                          onClick={(e) => toggleSaveJob(e, job.id)}
+                          className="p-2 hover:bg-gray-100 rounded-full"
+                        >
+                          <Heart className={`w-5 h-5 ${savedJobs.has(job.id) ? 'fill-red-500 text-red-500' : 'text-gray-400'}`} />
                         </button>
                       </div>
 
@@ -279,10 +292,17 @@ function JobsPage() {
                           <div className="text-sm text-gray-600">per month</div>
                         </div>
                         <div className="flex gap-2">
-                          <button className="btn-outline px-4 py-2">
-                            Save
+                          <button 
+                            onClick={(e) => toggleSaveJob(e, job.id)}
+                            className={`btn-outline px-4 py-2 flex items-center gap-1 ${savedJobs.has(job.id) ? 'text-red-500 border-red-300' : ''}`}
+                          >
+                            <Heart className={`w-4 h-4 ${savedJobs.has(job.id) ? 'fill-red-500' : ''}`} />
+                            {savedJobs.has(job.id) ? 'Saved' : 'Save'}
                           </button>
-                          <button className="btn-primary px-6 py-2">
+                          <button 
+                            onClick={(e) => { e.stopPropagation(); setSelectedJob(job); }}
+                            className="btn-primary px-6 py-2"
+                          >
                             Apply Now
                           </button>
                         </div>
