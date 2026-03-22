@@ -1,8 +1,9 @@
 import { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AppContext } from '../App';
+import EkaLogo from '../components/EkaLogo';
 import { 
-  Sparkles, BookOpen, Briefcase, TrendingUp, Users, 
+  BookOpen, Briefcase, TrendingUp, Users, 
   Award, Star, ArrowRight,
   Bell, Search, Home, ShoppingBag, User
 } from 'lucide-react';
@@ -62,7 +63,7 @@ function DashboardPage() {
         <div className="container mx-auto px-4 py-3">
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-2">
-              <Sparkles className="w-6 h-6 text-primary-500" />
+              <EkaLogo size="sm" />
               <span className="text-xl font-display font-bold gradient-text">Eka</span>
             </div>
             <div className="flex items-center gap-4">

@@ -1,8 +1,9 @@
 import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AppContext } from '../App';
+import EkaLogo from '../components/EkaLogo';
 import { 
-  Sparkles, Heart, MessageCircle, Share2, TrendingUp,
+  Heart, MessageCircle, Share2, TrendingUp,
   ArrowLeft, Plus, Image, Video, Award, X, Send, Smile
 } from 'lucide-react';
 
@@ -39,7 +40,7 @@ function CommunityPage() {
         <div className="container mx-auto px-4 py-3">
           <div className="flex justify-between items-center">
             <Link to="/dashboard" className="flex items-center gap-2">
-              <Sparkles className="w-6 h-6 text-primary-500" />
+              <EkaLogo size="sm" />
               <span className="text-xl font-display font-bold gradient-text">Eka</span>
             </Link>
             <Link to="/dashboard" className="text-gray-600 hover:text-primary-600">

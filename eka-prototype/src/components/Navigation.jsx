@@ -1,7 +1,8 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useState, useContext } from 'react';
 import { AppContext } from '../App';
-import { Sparkles, ArrowLeft, Bell, Search, X } from 'lucide-react';
+import EkaLogo from './EkaLogo';
+import { Bell, Search, ArrowLeft, X } from 'lucide-react';
 
 function Navigation({ showBackButton = false, title = "Eka" }) {
   const navigate = useNavigate();
@@ -37,7 +38,7 @@ function Navigation({ showBackButton = false, title = "Eka" }) {
               </button>
             )}
             <Link to="/dashboard" className="flex items-center gap-2">
-              <Sparkles className="w-6 h-6 text-primary-500" />
+              <EkaLogo size="sm" />
               <span className="text-xl font-display font-bold gradient-text">{title}</span>
             </Link>
           </div>

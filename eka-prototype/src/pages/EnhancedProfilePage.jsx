@@ -1,9 +1,10 @@
 import { useState, useContext, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AppContext } from '../App';
+import EkaLogo from '../components/EkaLogo';
 import { t, getCurrentLanguage, setCurrentLanguage } from '../utils/translations';
 import { 
-  Sparkles, ArrowLeft, Edit, MapPin, Star, Award, 
+  ArrowLeft, Edit, MapPin, Star, Award, 
   Briefcase, BookOpen, TrendingUp, Settings, LogOut,
   Shield, Phone, Mail, Calendar, CheckCircle, Camera,
   Heart, MessageCircle, Users, DollarSign, Trophy,
@@ -162,7 +163,7 @@ function EnhancedProfilePage() {
         <div className="container mx-auto px-4 py-3">
           <div className="flex justify-between items-center">
             <Link to="/dashboard" className="flex items-center gap-2">
-              <Sparkles className="w-6 h-6 text-primary-500" />
+              <EkaLogo size="sm" />
               <span className="text-xl font-display font-bold gradient-text">Eka</span>
             </Link>
             <div className="flex items-center gap-3">

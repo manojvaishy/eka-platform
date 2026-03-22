@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import EkaLogo from '../components/EkaLogo';
 import { Sparkles, BookOpen, Briefcase, Users, TrendingUp, Star, Heart, Award } from 'lucide-react';
 
 function LandingPage() {
@@ -9,7 +10,7 @@ function LandingPage() {
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-2">
-              <Sparkles className="w-8 h-8 text-primary-500" />
+              <EkaLogo size="md" />
               <span className="text-2xl font-display font-bold gradient-text">Eka</span>
             </div>
             <div className="hidden md:flex gap-8">
@@ -31,7 +32,7 @@ function LandingPage() {
             <div className="animate-fade-in">
               <div className="inline-block mb-4">
                 <span className="badge badge-primary text-lg px-6 py-2">
-                  <Sparkles className="w-5 h-5 inline mr-2" />
+                <Sparkles className="w-5 h-5 inline mr-2" />
                   Empowering 50,000+ Women
                 </span>
               </div>
@@ -271,7 +272,7 @@ function LandingPage() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Sparkles className="w-6 h-6 text-primary-400" />
+                <EkaLogo size="sm" />
                 <span className="text-xl font-display font-bold">Eka</span>
               </div>
               <p className="text-gray-400">
