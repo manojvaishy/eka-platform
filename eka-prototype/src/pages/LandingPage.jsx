@@ -1,6 +1,77 @@
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import EkaLogo from '../components/EkaLogo';
 import { Sparkles, BookOpen, Briefcase, Users, TrendingUp, Star, Heart, Award } from 'lucide-react';
+
+const heroSlides = [
+  { img: 'https://i.ibb.co/5gw7LFrD/eka-6.jpg',       message: 'Har hunar ek nayi shuruat hai' },
+  { img: 'https://i.ibb.co/9mhCnvvd/eka-7.webp',      message: 'Ghar ki rasoi se shuru, duniya tak pahuncho' },
+  { img: 'https://i.ibb.co/N22khzYK/eka-8.jpg',       message: 'Apne sapne, apni mehnat, apna success' },
+  { img: 'https://i.ibb.co/zDnps8D/eka-iamge-2.jpg',  message: 'Milke badhenge, milke jeethenge' },
+  { img: 'https://i.ibb.co/XxJwL4G8/eka-iamge-3.jpg', message: 'Teri skills, teri pehchaan' },
+  { img: 'https://i.ibb.co/Lz9zYsZH/eka-iamge-4.jpg', message: 'Seekho, kamao, aage badho' },
+  { img: 'https://i.ibb.co/KcGZJ8Sn/eka-iamges-5.jpg',message: 'Ek teacher hazaron zindagiyan badal sakti hai' },
+  { img: 'https://i.ibb.co/zVh6bKS6/imagr-eka-1.webp',message: 'Digital skills se naya future banao' },
+];
+
+function HeroCarousel() {
+  const [current, setCurrent] = useState(0);
+  const [fade, setFade] = useState(true);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setFade(false);
+      setTimeout(() => {
+        setCurrent(prev => (prev + 1) % heroSlides.length);
+        setFade(true);
+      }, 400);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const slide = heroSlides[current];
+
+  return (
+    <div className="relative z-10">
+      <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+        <img
+          src={slide.img}
+          alt="Empowered Woman"
+          className="w-full h-96 object-cover"
+          style={{ opacity: fade ? 1 : 0, transition: 'opacity 0.4s ease' }}
+        />
+        {/* Message overlay */}
+        <div
+          className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent px-6 py-5"
+          style={{ opacity: fade ? 1 : 0, transition: 'opacity 0.4s ease' }}
+        >
+          <p className="text-white text-lg font-semibold text-center">✨ {slide.message}</p>
+        </div>
+        {/* Dots */}
+        <div className="absolute top-3 right-3 flex gap-1">
+          {heroSlides.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => { setFade(false); setTimeout(() => { setCurrent(i); setFade(true); }, 400); }}
+              className={`w-2 h-2 rounded-full transition-all ${i === current ? 'bg-white w-4' : 'bg-white/50'}`}
+            />
+          ))}
+        </div>
+      </div>
+      <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl">
+        <div className="flex items-center gap-3">
+          <div className="w-12 h-12 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full flex items-center justify-center">
+            <Star className="w-6 h-6 text-white" />
+          </div>
+          <div>
+            <div className="font-bold text-gray-800">4.8/5 Rating</div>
+            <div className="text-sm text-gray-600">From 10,000+ Women</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function LandingPage() {
   return (
@@ -75,24 +146,7 @@ function LandingPage() {
               </div>
             </div>
             <div className="relative animate-slide-up">
-              <div className="relative z-10">
-                <img 
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600" 
-                  alt="Empowered Woman" 
-                  className="rounded-2xl shadow-2xl"
-                />
-                <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl">
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full flex items-center justify-center">
-                      <Star className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <div className="font-bold text-gray-800">4.8/5 Rating</div>
-                      <div className="text-sm text-gray-600">From 10,000+ Women</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <HeroCarousel />
               <div className="absolute top-10 -right-10 w-32 h-32 bg-primary-200 rounded-full blur-3xl opacity-50"></div>
               <div className="absolute bottom-10 -left-10 w-32 h-32 bg-secondary-200 rounded-full blur-3xl opacity-50"></div>
             </div>
