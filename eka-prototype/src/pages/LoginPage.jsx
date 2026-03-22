@@ -1,6 +1,6 @@
 import { useState, useContext } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { Sparkles, Phone, Lock } from 'lucide-react';
+import { Sparkles, Phone, Lock, CheckCircle } from 'lucide-react';
 import { AppContext } from '../App';
 
 function LoginPage() {
@@ -8,35 +8,47 @@ function LoginPage() {
   const { setIsAuthenticated, setCurrentUser, users } = useContext(AppContext);
   const [phone, setPhone] = useState('');
   const [otp, setOtp] = useState('');
-  const [step, setStep] = useState('phone'); // 'phone' or 'otp'
+  const [step, setStep] = useState('phone');
+  const [generatedOtp, setGeneratedOtp] = useState('');
+  const [otpError, setOtpError] = useState('');
+  const [resendTimer, setResendTimer] = useState(0);
+
+  const startResendTimer = () => {
+    setResendTimer(30);
+    const interval = setInterval(() => {
+      setResendTimer(prev => {
+        if (prev <= 1) { clearInterval(interval); return 0; }
+        return prev - 1;
+      });
+    }, 1000);
+  };
 
   const handleSendOTP = (e) => {
     e.preventDefault();
-    // Simulate OTP send
+    const newOtp = String(Math.floor(100000 + Math.random() * 900000));
+    setGeneratedOtp(newOtp);
+    setOtp('');
+    setOtpError('');
     setStep('otp');
+    startResendTimer();
   };
 
   const handleVerifyOTP = (e) => {
     e.preventDefault();
-    // Simulate OTP verification - any 6 digits work
-    if (otp.length === 6) {
+    if (otp === generatedOtp) {
+      setOtpError('');
       setIsAuthenticated(true);
-      
-      // IMPORTANT: Check if user has completed onboarding
       const onboardingComplete = localStorage.getItem('onboardingComplete');
       const userData = localStorage.getItem('userData');
-      
-      // If no onboarding data OR onboarding not complete, go to onboarding
       if (!onboardingComplete || !userData) {
-        console.log('New user - redirecting to onboarding');
         navigate('/onboarding');
       } else {
-        console.log('Existing user - redirecting to dashboard');
-        // Load user data and set as current user
         const savedUser = JSON.parse(userData);
         setCurrentUser(savedUser);
         navigate('/dashboard');
       }
+    } else {
+      setOtpError('Galat OTP hai! Dobara try karo.');
     }
   };
 
@@ -88,6 +100,15 @@ function LoginPage() {
             </form>
           ) : (
             <form onSubmit={handleVerifyOTP}>
+              {/* OTP Display Box */}
+              <div className="mb-5 p-4 bg-green-50 border-2 border-green-300 rounded-xl text-center">
+                <p className="text-sm text-green-700 mb-1">✅ OTP sent to <strong>{phone}</strong></p>
+                <p className="text-sm text-green-600 mb-2">Your demo OTP is:</p>
+                <div className="text-4xl font-bold tracking-widest text-green-700 bg-white rounded-lg py-3 px-4 border-2 border-green-200 inline-block">
+                  {generatedOtp}
+                </div>
+              </div>
+
               <div className="mb-6">
                 <label className="block text-gray-700 font-semibold mb-2">
                   <Lock className="w-4 h-4 inline mr-2" />
@@ -96,31 +117,28 @@ function LoginPage() {
                 <input
                   type="text"
                   value={otp}
-                  onChange={(e) => setOtp(e.target.value)}
-                  placeholder="123456"
+                  onChange={(e) => { setOtp(e.target.value); setOtpError(''); }}
+                  placeholder="______"
                   maxLength="6"
-                  className="input text-center text-2xl tracking-widest"
+                  className={`input text-center text-2xl tracking-widest ${otpError ? 'border-red-400' : ''}`}
                   required
                 />
-                <p className="text-sm text-gray-500 mt-2">
-                  OTP sent to {phone}
-                  <button 
-                    type="button"
-                    onClick={() => setStep('phone')}
-                    className="text-primary-600 ml-2 underline"
-                  >
-                    Change
+                {otpError && <p className="text-red-500 text-sm mt-2">{otpError}</p>}
+                <div className="flex justify-between items-center mt-2">
+                  <button type="button" onClick={() => setStep('phone')} className="text-primary-600 text-sm underline">
+                    Number change karo
                   </button>
-                </p>
+                  {resendTimer > 0 ? (
+                    <span className="text-gray-500 text-sm">Resend in {resendTimer}s</span>
+                  ) : (
+                    <button type="button" onClick={handleSendOTP} className="text-primary-600 text-sm font-semibold underline">
+                      Resend OTP
+                    </button>
+                  )}
+                </div>
               </div>
               <button type="submit" className="btn-primary w-full">
                 Verify & Login
-              </button>
-              <button 
-                type="button"
-                className="w-full mt-3 text-primary-600 font-semibold"
-              >
-                Resend OTP
               </button>
             </form>
           )}
