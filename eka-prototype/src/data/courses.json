@@ -13,47 +13,17 @@
       "bio": "20 years of tailoring experience, trained 500+ women",
       "image": "https://i.pravatar.cc/150?img=9"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1558769132-cb1aea1f1d58?w=400",
+    "thumbnail": "https://images.unsplash.com/photo-1558769132-cb1aea1f1d58?w=400&fit=crop",
     "price": 0,
     "rating": 4.8,
     "enrollmentCount": 1250,
     "completionRate": 78,
     "syllabus": [
-      {
-        "id": "l1",
-        "title": "Introduction to Tailoring Tools",
-        "type": "video",
-        "duration": 15,
-        "completed": false
-      },
-      {
-        "id": "l2",
-        "title": "Taking Measurements Correctly",
-        "type": "video",
-        "duration": 20,
-        "completed": false
-      },
-      {
-        "id": "l3",
-        "title": "Basic Stitching Techniques",
-        "type": "video",
-        "duration": 30,
-        "completed": false
-      },
-      {
-        "id": "l4",
-        "title": "Blouse Stitching - Part 1",
-        "type": "video",
-        "duration": 45,
-        "completed": false
-      },
-      {
-        "id": "l5",
-        "title": "Practice Quiz",
-        "type": "quiz",
-        "duration": 10,
-        "completed": false
-      }
+      { "id": "l1", "title": "Introduction to Tailoring Tools", "type": "video", "duration": 15 },
+      { "id": "l2", "title": "Taking Measurements Correctly", "type": "video", "duration": 20 },
+      { "id": "l3", "title": "Basic Stitching Techniques", "type": "video", "duration": 30 },
+      { "id": "l4", "title": "Blouse Stitching - Part 1", "type": "video", "duration": 45 },
+      { "id": "l5", "title": "Practice Quiz", "type": "quiz", "duration": 10 }
     ],
     "skills": ["Stitching", "Pattern Making", "Alterations"],
     "certificate": true,
@@ -73,30 +43,15 @@
       "bio": "Professional makeup artist with 10+ years experience",
       "image": "https://i.pravatar.cc/150?img=5"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400",
+    "thumbnail": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&fit=crop",
     "price": 2999,
     "rating": 4.9,
     "enrollmentCount": 856,
     "completionRate": 85,
     "syllabus": [
-      {
-        "id": "l1",
-        "title": "Makeup Tools & Products",
-        "type": "video",
-        "duration": 20
-      },
-      {
-        "id": "l2",
-        "title": "Skin Preparation",
-        "type": "video",
-        "duration": 25
-      },
-      {
-        "id": "l3",
-        "title": "Bridal Makeup Techniques",
-        "type": "video",
-        "duration": 60
-      }
+      { "id": "l1", "title": "Makeup Tools & Products", "type": "video", "duration": 20 },
+      { "id": "l2", "title": "Skin Preparation", "type": "video", "duration": 25 },
+      { "id": "l3", "title": "Bridal Makeup Techniques", "type": "video", "duration": 60 }
     ],
     "skills": ["Makeup", "Beauty Services", "Client Management"],
     "certificate": true,
@@ -116,30 +71,15 @@
       "bio": "Expert chef with 20 years experience",
       "image": "https://i.pravatar.cc/150?img=9"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=400",
+    "thumbnail": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=400&fit=crop",
     "price": 0,
     "rating": 4.7,
     "enrollmentCount": 2100,
     "completionRate": 82,
     "syllabus": [
-      {
-        "id": "l1",
-        "title": "Kitchen Setup & Hygiene",
-        "type": "video",
-        "duration": 15
-      },
-      {
-        "id": "l2",
-        "title": "Basic Spices & Masalas",
-        "type": "video",
-        "duration": 20
-      },
-      {
-        "id": "l3",
-        "title": "Popular North Indian Dishes",
-        "type": "video",
-        "duration": 90
-      }
+      { "id": "l1", "title": "Kitchen Setup & Hygiene", "type": "video", "duration": 15 },
+      { "id": "l2", "title": "Basic Spices & Masalas", "type": "video", "duration": 20 },
+      { "id": "l3", "title": "Popular North Indian Dishes", "type": "video", "duration": 90 }
     ],
     "skills": ["Cooking", "Catering", "Business Management"],
     "certificate": true,
@@ -158,30 +98,15 @@
       "bio": "Digital marketing expert, helped 1000+ women start online",
       "image": "https://i.pravatar.cc/150?img=32"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400",
+    "thumbnail": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&fit=crop",
     "price": 1999,
     "rating": 4.6,
     "enrollmentCount": 1450,
     "completionRate": 75,
     "syllabus": [
-      {
-        "id": "l1",
-        "title": "Introduction to Digital Marketing",
-        "type": "video",
-        "duration": 20
-      },
-      {
-        "id": "l2",
-        "title": "Social Media Basics",
-        "type": "video",
-        "duration": 30
-      },
-      {
-        "id": "l3",
-        "title": "Creating Content",
-        "type": "video",
-        "duration": 40
-      }
+      { "id": "l1", "title": "Introduction to Digital Marketing", "type": "video", "duration": 20 },
+      { "id": "l2", "title": "Social Media Basics", "type": "video", "duration": 30 },
+      { "id": "l3", "title": "Creating Content", "type": "video", "duration": 40 }
     ],
     "skills": ["Digital Marketing", "Social Media", "Content Creation"],
     "certificate": true,
@@ -200,24 +125,14 @@
       "bio": "Running successful tiffin service for 8 years",
       "image": "https://i.pravatar.cc/150?img=36"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400",
+    "thumbnail": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&fit=crop",
     "price": 0,
     "rating": 4.5,
     "enrollmentCount": 980,
     "completionRate": 88,
     "syllabus": [
-      {
-        "id": "l1",
-        "title": "Planning Your Tiffin Business",
-        "type": "video",
-        "duration": 25
-      },
-      {
-        "id": "l2",
-        "title": "Menu & Pricing",
-        "type": "video",
-        "duration": 30
-      }
+      { "id": "l1", "title": "Planning Your Tiffin Business", "type": "video", "duration": 25 },
+      { "id": "l2", "title": "Menu & Pricing", "type": "video", "duration": 30 }
     ],
     "skills": ["Cooking", "Business Planning", "Customer Service"],
     "certificate": true,
@@ -237,24 +152,14 @@
       "bio": "Certified yoga instructor with 15 years experience",
       "image": "https://i.pravatar.cc/150?img=24"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400",
+    "thumbnail": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&fit=crop",
     "price": 4999,
     "rating": 4.9,
     "enrollmentCount": 567,
     "completionRate": 92,
     "syllabus": [
-      {
-        "id": "l1",
-        "title": "Introduction to Yoga",
-        "type": "video",
-        "duration": 30
-      },
-      {
-        "id": "l2",
-        "title": "Basic Asanas",
-        "type": "video",
-        "duration": 60
-      }
+      { "id": "l1", "title": "Introduction to Yoga", "type": "video", "duration": 30 },
+      { "id": "l2", "title": "Basic Asanas", "type": "video", "duration": 60 }
     ],
     "skills": ["Yoga", "Teaching", "Wellness"],
     "certificate": true,
@@ -274,24 +179,14 @@
       "bio": "Award-winning artisan with 12 years experience",
       "image": "https://i.pravatar.cc/150?img=20"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1611652022419-a9419f74343a?w=400",
+    "thumbnail": "https://images.unsplash.com/photo-1611652022419-a9419f74343a?w=400&fit=crop",
     "price": 1499,
     "rating": 4.7,
     "enrollmentCount": 723,
     "completionRate": 80,
     "syllabus": [
-      {
-        "id": "l1",
-        "title": "Tools & Materials",
-        "type": "video",
-        "duration": 20
-      },
-      {
-        "id": "l2",
-        "title": "Basic Techniques",
-        "type": "video",
-        "duration": 40
-      }
+      { "id": "l1", "title": "Tools & Materials", "type": "video", "duration": 20 },
+      { "id": "l2", "title": "Basic Techniques", "type": "video", "duration": 40 }
     ],
     "skills": ["Handicrafts", "Jewelry Making", "Design"],
     "certificate": true,
@@ -310,24 +205,14 @@
       "bio": "English trainer with 8 years experience",
       "image": "https://i.pravatar.cc/150?img=40"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=400",
+    "thumbnail": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=400&fit=crop",
     "price": 0,
     "rating": 4.4,
     "enrollmentCount": 3200,
     "completionRate": 70,
     "syllabus": [
-      {
-        "id": "l1",
-        "title": "Basic Grammar",
-        "type": "video",
-        "duration": 25
-      },
-      {
-        "id": "l2",
-        "title": "Speaking Practice",
-        "type": "video",
-        "duration": 30
-      }
+      { "id": "l1", "title": "Basic Grammar", "type": "video", "duration": 25 },
+      { "id": "l2", "title": "Speaking Practice", "type": "video", "duration": 30 }
     ],
     "skills": ["English", "Communication", "Confidence"],
     "certificate": true,
@@ -346,24 +231,14 @@
       "bio": "Award-winning mehendi artist, 15 years experience",
       "image": "https://i.pravatar.cc/150?img=45"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1610735794418-c7c8e1f3e8f1?w=400",
+    "thumbnail": "https://images.unsplash.com/photo-1562157873-818bc0726f68?w=400&fit=crop",
     "price": 1499,
     "rating": 4.8,
     "enrollmentCount": 645,
     "completionRate": 87,
     "syllabus": [
-      {
-        "id": "l1",
-        "title": "Mehendi Basics & Cone Making",
-        "type": "video",
-        "duration": 20
-      },
-      {
-        "id": "l2",
-        "title": "Traditional Designs",
-        "type": "video",
-        "duration": 30
-      }
+      { "id": "l1", "title": "Mehendi Basics & Cone Making", "type": "video", "duration": 20 },
+      { "id": "l2", "title": "Traditional Designs", "type": "video", "duration": 30 }
     ],
     "skills": ["Mehendi", "Design", "Bridal Art"],
     "certificate": true,
@@ -382,24 +257,14 @@
       "bio": "Professional baker, runs successful home bakery",
       "image": "https://i.pravatar.cc/150?img=47"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400",
+    "thumbnail": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&fit=crop",
     "price": 2499,
     "rating": 4.7,
     "enrollmentCount": 892,
     "completionRate": 81,
     "syllabus": [
-      {
-        "id": "l1",
-        "title": "Baking Basics",
-        "type": "video",
-        "duration": 30
-      },
-      {
-        "id": "l2",
-        "title": "Cake Decoration Techniques",
-        "type": "video",
-        "duration": 45
-      }
+      { "id": "l1", "title": "Baking Basics", "type": "video", "duration": 30 },
+      { "id": "l2", "title": "Cake Decoration Techniques", "type": "video", "duration": 45 }
     ],
     "skills": ["Baking", "Cake Decoration", "Business"],
     "certificate": true,
@@ -418,24 +283,14 @@
       "bio": "Candle making expert, 8 years experience",
       "image": "https://i.pravatar.cc/150?img=48"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1602874801006-e24aa9b5e481?w=400",
+    "thumbnail": "https://images.unsplash.com/photo-1603905756542-f8d8e5a4e1e4?w=400&fit=crop",
     "price": 999,
     "rating": 4.5,
     "enrollmentCount": 534,
     "completionRate": 79,
     "syllabus": [
-      {
-        "id": "l1",
-        "title": "Materials & Safety",
-        "type": "video",
-        "duration": 15
-      },
-      {
-        "id": "l2",
-        "title": "Basic Candle Making",
-        "type": "video",
-        "duration": 25
-      }
+      { "id": "l1", "title": "Materials & Safety", "type": "video", "duration": 15 },
+      { "id": "l2", "title": "Basic Candle Making", "type": "video", "duration": 25 }
     ],
     "skills": ["Candle Making", "Home Decor", "Crafts"],
     "certificate": true,
@@ -454,24 +309,14 @@
       "bio": "Embroidery expert, runs successful boutique",
       "image": "https://i.pravatar.cc/150?img=49"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=400",
+    "thumbnail": "https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=400&fit=crop",
     "price": 1999,
     "rating": 4.6,
     "enrollmentCount": 467,
     "completionRate": 76,
     "syllabus": [
-      {
-        "id": "l1",
-        "title": "Embroidery Basics",
-        "type": "video",
-        "duration": 30
-      },
-      {
-        "id": "l2",
-        "title": "Advanced Techniques",
-        "type": "video",
-        "duration": 50
-      }
+      { "id": "l1", "title": "Embroidery Basics", "type": "video", "duration": 30 },
+      { "id": "l2", "title": "Advanced Techniques", "type": "video", "duration": 50 }
     ],
     "skills": ["Embroidery", "Design", "Boutique Management"],
     "certificate": true,
@@ -490,24 +335,14 @@
       "bio": "Freelance writer earning 50k+ monthly",
       "image": "https://i.pravatar.cc/150?img=50"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=400",
+    "thumbnail": "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=400&fit=crop",
     "price": 1499,
     "rating": 4.5,
     "enrollmentCount": 1123,
     "completionRate": 73,
     "syllabus": [
-      {
-        "id": "l1",
-        "title": "Writing Basics",
-        "type": "video",
-        "duration": 25
-      },
-      {
-        "id": "l2",
-        "title": "Finding Clients",
-        "type": "video",
-        "duration": 30
-      }
+      { "id": "l1", "title": "Writing Basics", "type": "video", "duration": 25 },
+      { "id": "l2", "title": "Finding Clients", "type": "video", "duration": 30 }
     ],
     "skills": ["Writing", "Blogging", "SEO"],
     "certificate": true,
@@ -526,24 +361,14 @@
       "bio": "Fashion stylist, 12 years experience",
       "image": "https://i.pravatar.cc/150?img=51"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400",
+    "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400&fit=crop",
     "price": 799,
     "rating": 4.4,
     "enrollmentCount": 389,
     "completionRate": 85,
     "syllabus": [
-      {
-        "id": "l1",
-        "title": "Basic Draping Styles",
-        "type": "video",
-        "duration": 20
-      },
-      {
-        "id": "l2",
-        "title": "Regional Styles",
-        "type": "video",
-        "duration": 25
-      }
+      { "id": "l1", "title": "Basic Draping Styles", "type": "video", "duration": 20 },
+      { "id": "l2", "title": "Regional Styles", "type": "video", "duration": 25 }
     ],
     "skills": ["Saree Draping", "Styling", "Fashion"],
     "certificate": true,
@@ -562,24 +387,14 @@
       "bio": "Traditional recipes expert, 25 years experience",
       "image": "https://i.pravatar.cc/150?img=52"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1596040033229-a0b3b83b6a1f?w=400",
+    "thumbnail": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=400&fit=crop",
     "price": 0,
     "rating": 4.6,
     "enrollmentCount": 1567,
     "completionRate": 88,
     "syllabus": [
-      {
-        "id": "l1",
-        "title": "Traditional Recipes",
-        "type": "video",
-        "duration": 30
-      },
-      {
-        "id": "l2",
-        "title": "Packaging & Selling",
-        "type": "video",
-        "duration": 25
-      }
+      { "id": "l1", "title": "Traditional Recipes", "type": "video", "duration": 30 },
+      { "id": "l2", "title": "Packaging & Selling", "type": "video", "duration": 25 }
     ],
     "skills": ["Cooking", "Food Business", "Preservation"],
     "certificate": true,
