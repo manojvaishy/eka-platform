@@ -41,7 +41,6 @@ function CommunityPage() {
           <div className="flex justify-between items-center">
             <Link to="/dashboard" className="flex items-center gap-2">
               <EkaLogo size="sm" />
-              <span className="text-xl font-display font-bold gradient-text">Eka</span>
             </Link>
             <Link to="/dashboard" className="text-gray-600 hover:text-primary-600">
               <ArrowLeft className="w-6 h-6" />

@@ -39,7 +39,6 @@ function Navigation({ showBackButton = false, title = "Eka" }) {
             )}
             <Link to="/dashboard" className="flex items-center gap-2">
               <EkaLogo size="sm" />
-              <span className="text-xl font-display font-bold gradient-text">{title}</span>
             </Link>
           </div>
 

@@ -11,7 +11,6 @@ function LandingPage() {
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-2">
               <EkaLogo size="md" />
-              <span className="text-2xl font-display font-bold gradient-text">Eka</span>
             </div>
             <div className="hidden md:flex gap-8">
               <a href="#features" className="text-gray-700 hover:text-primary-500 transition">Features</a>
@@ -273,7 +272,6 @@ function LandingPage() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <EkaLogo size="sm" />
-                <span className="text-xl font-display font-bold">Eka</span>
               </div>
               <p className="text-gray-400">
                 Empowering women across India through skills, opportunities, and community.
