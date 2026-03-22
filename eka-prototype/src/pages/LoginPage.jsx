@@ -36,8 +36,8 @@ function LoginPage() {
 
   const handleVerifyOTP = (e) => {
     e.preventDefault();
-    if (otp === generatedOtp) {
-      setOtpError('');
+    // Any 6-digit OTP works - demo mode
+    if (otp.length === 6) {
       setIsAuthenticated(true);
       const onboardingComplete = localStorage.getItem('onboardingComplete');
       const userData = localStorage.getItem('userData');
@@ -47,8 +47,6 @@ function LoginPage() {
         setCurrentUser(JSON.parse(userData));
         navigate('/dashboard');
       }
-    } else {
-      setOtpError('Galat OTP hai! Dobara try karo.');
     }
   };
 
