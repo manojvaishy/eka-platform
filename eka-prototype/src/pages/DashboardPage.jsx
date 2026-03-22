@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AppContext } from '../App';
 import EkaLogo from '../components/EkaLogo';
+import { t, getCurrentLanguage } from '../utils/translations';
 import { 
   BookOpen, Briefcase, TrendingUp, Users, 
   Award, Star, ArrowRight,
@@ -10,6 +11,7 @@ import {
 
 function DashboardPage() {
   const { currentUser: contextUser, setCurrentUser, courses, jobs, posts } = useContext(AppContext);
+  const lang = getCurrentLanguage();
   
   const [displayUser, setDisplayUser] = useState(() => {
     const savedUserData = localStorage.getItem('userData');
@@ -103,7 +105,7 @@ function DashboardPage() {
               <BookOpen className="w-8 h-8 text-primary-500" />
               <span className="text-2xl font-bold text-gray-800">3</span>
             </div>
-            <p className="text-gray-600 text-sm">Courses Enrolled</p>
+            <p className="text-gray-600 text-sm">{t('Courses Enrolled', lang)}</p>
           </div>
           
           <div className="card p-6">
@@ -111,7 +113,7 @@ function DashboardPage() {
               <TrendingUp className="w-8 h-8 text-success-500" />
               <span className="text-2xl font-bold text-gray-800">₹{(displayUser.totalEarnings || 0).toLocaleString()}</span>
             </div>
-            <p className="text-gray-600 text-sm">Total Earnings</p>
+            <p className="text-gray-600 text-sm">{t('Total Earnings', lang)}</p>
           </div>
           
           <div className="card p-6">
@@ -119,7 +121,7 @@ function DashboardPage() {
               <Star className="w-8 h-8 text-yellow-500" />
               <span className="text-2xl font-bold text-gray-800">{displayUser.trustScore || '4.7'}</span>
             </div>
-            <p className="text-gray-600 text-sm">Trust Score</p>
+            <p className="text-gray-600 text-sm">{t('Trust Score', lang)}</p>
           </div>
           
           <div className="card p-6">
@@ -127,7 +129,7 @@ function DashboardPage() {
               <Award className="w-8 h-8 text-purple-500" />
               <span className="text-2xl font-bold text-gray-800">{displayUser.badges?.length || 0}</span>
             </div>
-            <p className="text-gray-600 text-sm">Badges Earned</p>
+            <p className="text-gray-600 text-sm">{t('Badges Earned', lang)}</p>
           </div>
         </div>
 
@@ -138,9 +140,9 @@ function DashboardPage() {
             {/* Continue Learning */}
             <section>
               <div className="flex justify-between items-center mb-4">
-                <h2 className="text-2xl font-bold text-gray-800">Continue Learning</h2>
+                <h2 className="text-2xl font-bold text-gray-800">{t('Continue Learning', lang)}</h2>
                 <Link to="/courses" className="text-primary-600 font-semibold flex items-center gap-1 hover:gap-2 transition-all">
-                  View All <ArrowRight className="w-4 h-4" />
+                  {t('View All', lang)} <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
               <div className="space-y-4">
@@ -165,7 +167,7 @@ function DashboardPage() {
                       </div>
                     </div>
                     <Link to="/courses" className="btn-primary px-4 py-2 text-sm self-center">
-                      Continue
+                      {t('Continue', lang)}
                     </Link>
                   </div>
                 ))}
@@ -175,9 +177,9 @@ function DashboardPage() {
             {/* Recommended Jobs */}
             <section>
               <div className="flex justify-between items-center mb-4">
-                <h2 className="text-2xl font-bold text-gray-800">Jobs For You</h2>
+                <h2 className="text-2xl font-bold text-gray-800">{t('Jobs For You', lang)}</h2>
                 <Link to="/jobs" className="text-primary-600 font-semibold flex items-center gap-1 hover:gap-2 transition-all">
-                  View All <ArrowRight className="w-4 h-4" />
+                  {t('View All', lang)} <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
               <div className="grid md:grid-cols-2 gap-4">
@@ -206,7 +208,7 @@ function DashboardPage() {
                       <span className="font-bold text-primary-600">
                         ₹{job.salary.min.toLocaleString()} - ₹{job.salary.max.toLocaleString()}
                       </span>
-                      <Link to="/jobs" className="btn-outline px-3 py-1 text-sm">Apply</Link>
+                      <Link to="/jobs" className="btn-outline px-3 py-1 text-sm">{t('Apply', lang)}</Link>
                     </div>
                   </div>
                 ))}
@@ -216,9 +218,9 @@ function DashboardPage() {
             {/* Community Feed Preview */}
             <section>
               <div className="flex justify-between items-center mb-4">
-                <h2 className="text-2xl font-bold text-gray-800">Shakti Community</h2>
+                <h2 className="text-2xl font-bold text-gray-800">{t('Shakti Community', lang)}</h2>
                 <Link to="/community" className="text-primary-600 font-semibold flex items-center gap-1 hover:gap-2 transition-all">
-                  View All <ArrowRight className="w-4 h-4" />
+                  {t('View All', lang)} <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
               <div className="space-y-4">
@@ -262,23 +264,23 @@ function DashboardPage() {
           <div className="space-y-6">
             {/* Quick Actions */}
             <div className="card p-6">
-              <h3 className="font-bold text-gray-800 mb-4">Quick Actions</h3>
+              <h3 className="font-bold text-gray-800 mb-4">{t('Quick Actions', lang)}</h3>
               <div className="space-y-3">
                 <Link to="/courses" className="flex items-center gap-3 p-3 hover:bg-purple-50 rounded-lg transition">
                   <BookOpen className="w-5 h-5 text-primary-500" />
-                  <span className="text-gray-700">Browse Courses</span>
+                  <span className="text-gray-700">{t('Browse Courses', lang)}</span>
                 </Link>
                 <Link to="/jobs" className="flex items-center gap-3 p-3 hover:bg-purple-50 rounded-lg transition">
                   <Briefcase className="w-5 h-5 text-primary-500" />
-                  <span className="text-gray-700">Find Jobs</span>
+                  <span className="text-gray-700">{t('Find Jobs', lang)}</span>
                 </Link>
                 <Link to="/services" className="flex items-center gap-3 p-3 hover:bg-purple-50 rounded-lg transition">
                   <ShoppingBag className="w-5 h-5 text-primary-500" />
-                  <span className="text-gray-700">Offer Services</span>
+                  <span className="text-gray-700">{t('Offer Services', lang)}</span>
                 </Link>
                 <Link to="/community" className="flex items-center gap-3 p-3 hover:bg-purple-50 rounded-lg transition">
                   <Users className="w-5 h-5 text-primary-500" />
-                  <span className="text-gray-700">Join Community</span>
+                  <span className="text-gray-700">{t('Join Community', lang)}</span>
                 </Link>
               </div>
             </div>
@@ -286,7 +288,7 @@ function DashboardPage() {
             {/* Your Badges */}
             {displayUser.badges && displayUser.badges.length > 0 && (
               <div className="card p-6">
-                <h3 className="font-bold text-gray-800 mb-4">Your Achievements</h3>
+                <h3 className="font-bold text-gray-800 mb-4">{t('Your Achievements', lang)}</h3>
                 <div className="grid grid-cols-3 gap-3">
                   {displayUser.badges.map((badge, index) => (
                     <div key={index} className="text-center">
@@ -310,7 +312,7 @@ function DashboardPage() {
             {/* Skills */}
             {displayUser.skills && displayUser.skills.length > 0 && (
               <div className="card p-6">
-                <h3 className="font-bold text-gray-800 mb-4">Your Skills</h3>
+                <h3 className="font-bold text-gray-800 mb-4">{t('Your Skills', lang)}</h3>
                 <div className="flex flex-wrap gap-2">
                   {displayUser.skills.map((skill, index) => (
                     <span key={index} className="badge badge-primary">
