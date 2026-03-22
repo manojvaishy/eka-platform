@@ -13,7 +13,7 @@
       "bio": "20 years of tailoring experience, trained 500+ women",
       "image": "https://i.pravatar.cc/150?img=9"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1558769132-cb1aea1f1d58?w=400&fit=crop",
+    "thumbnail": "https://images.unsplash.com/photo-1558769132-cb1aea1f1d58?w=400",
     "price": 0,
     "rating": 4.8,
     "enrollmentCount": 1250,
@@ -43,7 +43,7 @@
       "bio": "Professional makeup artist with 10+ years experience",
       "image": "https://i.pravatar.cc/150?img=5"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&fit=crop",
+    "thumbnail": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400",
     "price": 2999,
     "rating": 4.9,
     "enrollmentCount": 856,
@@ -66,12 +66,11 @@
     "duration": 200,
     "language": "Hindi",
     "instructor": {
-      "id": "3",
       "name": "Meera Devi",
       "bio": "Expert chef with 20 years experience",
       "image": "https://i.pravatar.cc/150?img=9"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=400&fit=crop",
+    "thumbnail": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=400",
     "price": 0,
     "rating": 4.7,
     "enrollmentCount": 2100,
@@ -98,7 +97,7 @@
       "bio": "Digital marketing expert, helped 1000+ women start online",
       "image": "https://i.pravatar.cc/150?img=32"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&fit=crop",
+    "thumbnail": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400",
     "price": 1999,
     "rating": 4.6,
     "enrollmentCount": 1450,
@@ -125,7 +124,7 @@
       "bio": "Running successful tiffin service for 8 years",
       "image": "https://i.pravatar.cc/150?img=36"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&fit=crop",
+    "thumbnail": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400",
     "price": 0,
     "rating": 4.5,
     "enrollmentCount": 980,
@@ -147,12 +146,11 @@
     "duration": 300,
     "language": "English",
     "instructor": {
-      "id": "7",
       "name": "Lakshmi Iyer",
       "bio": "Certified yoga instructor with 15 years experience",
       "image": "https://i.pravatar.cc/150?img=24"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&fit=crop",
+    "thumbnail": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400",
     "price": 4999,
     "rating": 4.9,
     "enrollmentCount": 567,
@@ -174,12 +172,11 @@
     "duration": 160,
     "language": "Hindi",
     "instructor": {
-      "id": "6",
       "name": "Rekha Singh",
       "bio": "Award-winning artisan with 12 years experience",
       "image": "https://i.pravatar.cc/150?img=20"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1611652022419-a9419f74343a?w=400&fit=crop",
+    "thumbnail": "https://images.unsplash.com/photo-1611652022419-a9419f74343a?w=400",
     "price": 1499,
     "rating": 4.7,
     "enrollmentCount": 723,
@@ -205,7 +202,7 @@
       "bio": "English trainer with 8 years experience",
       "image": "https://i.pravatar.cc/150?img=40"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=400&fit=crop",
+    "thumbnail": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=400",
     "price": 0,
     "rating": 4.4,
     "enrollmentCount": 3200,
@@ -231,7 +228,7 @@
       "bio": "Award-winning mehendi artist, 15 years experience",
       "image": "https://i.pravatar.cc/150?img=45"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1562157873-818bc0726f68?w=400&fit=crop",
+    "thumbnail": "https://cdn.pixabay.com/photo/2016/11/29/13/14/attractive-1869761_640.jpg",
     "price": 1499,
     "rating": 4.8,
     "enrollmentCount": 645,
@@ -257,7 +254,7 @@
       "bio": "Professional baker, runs successful home bakery",
       "image": "https://i.pravatar.cc/150?img=47"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&fit=crop",
+    "thumbnail": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400",
     "price": 2499,
     "rating": 4.7,
     "enrollmentCount": 892,
@@ -283,7 +280,7 @@
       "bio": "Candle making expert, 8 years experience",
       "image": "https://i.pravatar.cc/150?img=48"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1603905756542-f8d8e5a4e1e4?w=400&fit=crop",
+    "thumbnail": "https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557396_640.jpg",
     "price": 999,
     "rating": 4.5,
     "enrollmentCount": 534,
@@ -309,7 +306,7 @@
       "bio": "Embroidery expert, runs successful boutique",
       "image": "https://i.pravatar.cc/150?img=49"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=400&fit=crop",
+    "thumbnail": "https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=400",
     "price": 1999,
     "rating": 4.6,
     "enrollmentCount": 467,
@@ -335,7 +332,7 @@
       "bio": "Freelance writer earning 50k+ monthly",
       "image": "https://i.pravatar.cc/150?img=50"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=400&fit=crop",
+    "thumbnail": "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=400",
     "price": 1499,
     "rating": 4.5,
     "enrollmentCount": 1123,
@@ -361,7 +358,7 @@
       "bio": "Fashion stylist, 12 years experience",
       "image": "https://i.pravatar.cc/150?img=51"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400&fit=crop",
+    "thumbnail": "https://cdn.pixabay.com/photo/2016/03/27/22/22/fashion-1284496_640.jpg",
     "price": 799,
     "rating": 4.4,
     "enrollmentCount": 389,
@@ -387,7 +384,7 @@
       "bio": "Traditional recipes expert, 25 years experience",
       "image": "https://i.pravatar.cc/150?img=52"
     },
-    "thumbnail": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=400&fit=crop",
+    "thumbnail": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=400",
     "price": 0,
     "rating": 4.6,
     "enrollmentCount": 1567,
