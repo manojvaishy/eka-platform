@@ -1,10 +1,8 @@
-import { useState, useContext, useEffect, useRef } from 'react';
+import { useState, useContext } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { Phone, Lock } from 'lucide-react';
 import { AppContext } from '../App';
 import EkaLogo from '../components/EkaLogo';
-import { auth } from '../firebase';
-import { RecaptchaVerifier, signInWithPhoneNumber } from 'firebase/auth';
 
 function LoginPage() {
   const navigate = useNavigate();
@@ -12,26 +10,7 @@ function LoginPage() {
   const [phone, setPhone] = useState('');
   const [otp, setOtp] = useState('');
   const [step, setStep] = useState('phone');
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
   const [resendTimer, setResendTimer] = useState(0);
-  const confirmationRef = useRef(null);
-  const recaptchaRef = useRef(null);
-
-  useEffect(() => {
-    // Setup invisible recaptcha
-    if (!recaptchaRef.current) {
-      recaptchaRef.current = new RecaptchaVerifier(auth, 'recaptcha-container', {
-        size: 'invisible',
-      });
-    }
-    return () => {
-      if (recaptchaRef.current) {
-        recaptchaRef.current.clear();
-        recaptchaRef.current = null;
-      }
-    };
-  }, []);
 
   const startResendTimer = () => {
     setResendTimer(30);
@@ -43,31 +22,16 @@ function LoginPage() {
     }, 1000);
   };
 
-  const handleSendOTP = async (e) => {
+  const handleSendOTP = (e) => {
     e.preventDefault();
-    setLoading(true);
-    setError('');
-    try {
-      const phoneNumber = `+91${phone}`;
-      const confirmation = await signInWithPhoneNumber(auth, phoneNumber, recaptchaRef.current);
-      confirmationRef.current = confirmation;
-      setStep('otp');
-      startResendTimer();
-    } catch (err) {
-      console.error(err);
-      setError('OTP bhejne mein problem aayi. Dobara try karo.');
-      // Reset recaptcha on error
-      recaptchaRef.current = new RecaptchaVerifier(auth, 'recaptcha-container', { size: 'invisible' });
-    }
-    setLoading(false);
+    setOtp('');
+    setStep('otp');
+    startResendTimer();
   };
 
-  const handleVerifyOTP = async (e) => {
+  const handleVerifyOTP = (e) => {
     e.preventDefault();
-    setLoading(true);
-    setError('');
-    try {
-      await confirmationRef.current.confirm(otp);
+    if (otp.length === 6) {
       setIsAuthenticated(true);
       const onboardingComplete = localStorage.getItem('onboardingComplete');
       const userData = localStorage.getItem('userData');
@@ -77,26 +41,7 @@ function LoginPage() {
         setCurrentUser(JSON.parse(userData));
         navigate('/dashboard');
       }
-    } catch (err) {
-      console.error(err);
-      setError('OTP galat hai. Dobara check karo.');
     }
-    setLoading(false);
-  };
-
-  const handleResend = async () => {
-    setError('');
-    setLoading(true);
-    try {
-      const phoneNumber = `+91${phone}`;
-      recaptchaRef.current = new RecaptchaVerifier(auth, 'recaptcha-container', { size: 'invisible' });
-      const confirmation = await signInWithPhoneNumber(auth, phoneNumber, recaptchaRef.current);
-      confirmationRef.current = confirmation;
-      startResendTimer();
-    } catch (err) {
-      setError('Resend mein problem aayi.');
-    }
-    setLoading(false);
   };
 
   const handleClearData = () => {
@@ -109,7 +54,6 @@ function LoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center px-6 py-12">
       <div className="absolute inset-0 bg-gradient-to-br from-primary-100 via-white to-secondary-100 -z-10"></div>
-      <div id="recaptcha-container"></div>
 
       <div className="max-w-md w-full">
         <div className="text-center mb-8">
@@ -140,15 +84,14 @@ function LoginPage() {
                   maxLength={10}
                   required
                 />
-                <p className="text-sm text-gray-500 mt-2">Aapke number pe real OTP aayega</p>
+                <p className="text-sm text-gray-500 mt-2">We'll send you an OTP to verify</p>
               </div>
-              {error && <p className="text-red-500 text-sm mb-4 text-center">{error}</p>}
               <button
                 type="submit"
-                disabled={phone.length !== 10 || loading}
+                disabled={phone.length !== 10}
                 className="btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {loading ? 'Bhej raha hoon...' : 'Send OTP'}
+                Send OTP
               </button>
             </form>
           ) : (
@@ -166,14 +109,13 @@ function LoginPage() {
                   value={otp}
                   onChange={(e) => {
                     const val = e.target.value.replace(/\D/g, '');
-                    if (val.length <= 6) { setOtp(val); setError(''); }
+                    if (val.length <= 6) setOtp(val);
                   }}
                   placeholder="• • • • • •"
                   maxLength="6"
                   className="input text-center text-2xl tracking-widest"
                   required
                 />
-                {error && <p className="text-red-500 text-sm mt-2 text-center">{error}</p>}
                 <div className="flex justify-between items-center mt-2">
                   <button type="button" onClick={() => setStep('phone')} className="text-primary-600 text-sm underline">
                     Number change karo
@@ -181,7 +123,7 @@ function LoginPage() {
                   {resendTimer > 0 ? (
                     <span className="text-gray-500 text-sm">Resend in {resendTimer}s</span>
                   ) : (
-                    <button type="button" onClick={handleResend} className="text-primary-600 text-sm font-semibold underline">
+                    <button type="button" onClick={handleSendOTP} className="text-primary-600 text-sm font-semibold underline">
                       Resend OTP
                     </button>
                   )}
@@ -189,10 +131,10 @@ function LoginPage() {
               </div>
               <button
                 type="submit"
-                disabled={otp.length !== 6 || loading}
+                disabled={otp.length !== 6}
                 className="btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {loading ? 'Verify ho raha hai...' : 'Verify & Login'}
+                Verify & Login
               </button>
             </form>
           )}
