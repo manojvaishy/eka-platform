@@ -1,8 +1,10 @@
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect, useRef } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { Phone, Lock } from 'lucide-react';
 import { AppContext } from '../App';
 import EkaLogo from '../components/EkaLogo';
+import { auth } from '../firebase';
+import { RecaptchaVerifier, signInWithPhoneNumber } from 'firebase/auth';
 
 function LoginPage() {
   const navigate = useNavigate();
@@ -10,9 +12,26 @@ function LoginPage() {
   const [phone, setPhone] = useState('');
   const [otp, setOtp] = useState('');
   const [step, setStep] = useState('phone');
-  const [generatedOtp, setGeneratedOtp] = useState('');
-  const [otpError, setOtpError] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
   const [resendTimer, setResendTimer] = useState(0);
+  const confirmationRef = useRef(null);
+  const recaptchaRef = useRef(null);
+
+  useEffect(() => {
+    // Setup invisible recaptcha
+    if (!recaptchaRef.current) {
+      recaptchaRef.current = new RecaptchaVerifier(auth, 'recaptcha-container', {
+        size: 'invisible',
+      });
+    }
+    return () => {
+      if (recaptchaRef.current) {
+        recaptchaRef.current.clear();
+        recaptchaRef.current = null;
+      }
+    };
+  }, []);
 
   const startResendTimer = () => {
     setResendTimer(30);
@@ -24,20 +43,31 @@ function LoginPage() {
     }, 1000);
   };
 
-  const handleSendOTP = (e) => {
+  const handleSendOTP = async (e) => {
     e.preventDefault();
-    const newOtp = String(Math.floor(100000 + Math.random() * 900000));
-    setGeneratedOtp(newOtp);
-    setOtp('');
-    setOtpError('');
-    setStep('otp');
-    startResendTimer();
+    setLoading(true);
+    setError('');
+    try {
+      const phoneNumber = `+91${phone}`;
+      const confirmation = await signInWithPhoneNumber(auth, phoneNumber, recaptchaRef.current);
+      confirmationRef.current = confirmation;
+      setStep('otp');
+      startResendTimer();
+    } catch (err) {
+      console.error(err);
+      setError('OTP bhejne mein problem aayi. Dobara try karo.');
+      // Reset recaptcha on error
+      recaptchaRef.current = new RecaptchaVerifier(auth, 'recaptcha-container', { size: 'invisible' });
+    }
+    setLoading(false);
   };
 
-  const handleVerifyOTP = (e) => {
+  const handleVerifyOTP = async (e) => {
     e.preventDefault();
-    // Any 6-digit OTP works - demo mode
-    if (otp.length === 6) {
+    setLoading(true);
+    setError('');
+    try {
+      await confirmationRef.current.confirm(otp);
       setIsAuthenticated(true);
       const onboardingComplete = localStorage.getItem('onboardingComplete');
       const userData = localStorage.getItem('userData');
@@ -47,7 +77,26 @@ function LoginPage() {
         setCurrentUser(JSON.parse(userData));
         navigate('/dashboard');
       }
+    } catch (err) {
+      console.error(err);
+      setError('OTP galat hai. Dobara check karo.');
     }
+    setLoading(false);
+  };
+
+  const handleResend = async () => {
+    setError('');
+    setLoading(true);
+    try {
+      const phoneNumber = `+91${phone}`;
+      recaptchaRef.current = new RecaptchaVerifier(auth, 'recaptcha-container', { size: 'invisible' });
+      const confirmation = await signInWithPhoneNumber(auth, phoneNumber, recaptchaRef.current);
+      confirmationRef.current = confirmation;
+      startResendTimer();
+    } catch (err) {
+      setError('Resend mein problem aayi.');
+    }
+    setLoading(false);
   };
 
   const handleClearData = () => {
@@ -60,9 +109,9 @@ function LoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center px-6 py-12">
       <div className="absolute inset-0 bg-gradient-to-br from-primary-100 via-white to-secondary-100 -z-10"></div>
+      <div id="recaptcha-container"></div>
 
       <div className="max-w-md w-full">
-        {/* Logo */}
         <div className="text-center mb-8">
           <Link to="/" className="inline-flex items-center justify-center mb-4">
             <EkaLogo size="lg" />
@@ -71,7 +120,6 @@ function LoginPage() {
           <p className="text-gray-600">Login to continue your journey</p>
         </div>
 
-        {/* Card */}
         <div className="card p-8">
           {step === 'phone' ? (
             <form onSubmit={handleSendOTP}>
@@ -92,23 +140,22 @@ function LoginPage() {
                   maxLength={10}
                   required
                 />
-                <p className="text-sm text-gray-500 mt-2">We'll send you an OTP to verify</p>
+                <p className="text-sm text-gray-500 mt-2">Aapke number pe real OTP aayega</p>
               </div>
+              {error && <p className="text-red-500 text-sm mb-4 text-center">{error}</p>}
               <button
                 type="submit"
-                disabled={phone.length !== 10}
+                disabled={phone.length !== 10 || loading}
                 className="btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Send OTP
+                {loading ? 'Bhej raha hoon...' : 'Send OTP'}
               </button>
             </form>
           ) : (
             <form onSubmit={handleVerifyOTP}>
-              {/* Simple sent confirmation */}
               <div className="mb-5 p-4 bg-green-50 border-2 border-green-200 rounded-xl text-center">
-                <p className="text-green-700 font-semibold">✅ OTP sent to <span className="tracking-wider">+91 {phone}</span></p>
+                <p className="text-green-700 font-semibold">✅ OTP sent to +91 {phone}</p>
               </div>
-
               <div className="mb-6">
                 <label className="block text-gray-700 font-semibold mb-2">
                   <Lock className="w-4 h-4 inline mr-2" />
@@ -119,14 +166,14 @@ function LoginPage() {
                   value={otp}
                   onChange={(e) => {
                     const val = e.target.value.replace(/\D/g, '');
-                    if (val.length <= 6) { setOtp(val); setOtpError(''); }
+                    if (val.length <= 6) { setOtp(val); setError(''); }
                   }}
                   placeholder="• • • • • •"
                   maxLength="6"
-                  className={`input text-center text-2xl tracking-widest ${otpError ? 'border-red-400' : ''}`}
+                  className="input text-center text-2xl tracking-widest"
                   required
                 />
-                {otpError && <p className="text-red-500 text-sm mt-2 text-center">{otpError}</p>}
+                {error && <p className="text-red-500 text-sm mt-2 text-center">{error}</p>}
                 <div className="flex justify-between items-center mt-2">
                   <button type="button" onClick={() => setStep('phone')} className="text-primary-600 text-sm underline">
                     Number change karo
@@ -134,23 +181,26 @@ function LoginPage() {
                   {resendTimer > 0 ? (
                     <span className="text-gray-500 text-sm">Resend in {resendTimer}s</span>
                   ) : (
-                    <button type="button" onClick={handleSendOTP} className="text-primary-600 text-sm font-semibold underline">
+                    <button type="button" onClick={handleResend} className="text-primary-600 text-sm font-semibold underline">
                       Resend OTP
                     </button>
                   )}
                 </div>
               </div>
-              <button type="submit" className="btn-primary w-full">
-                Verify & Login
+              <button
+                type="submit"
+                disabled={otp.length !== 6 || loading}
+                className="btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {loading ? 'Verify ho raha hai...' : 'Verify & Login'}
               </button>
             </form>
           )}
         </div>
 
-        {/* Clear data button */}
         <div className="mt-4 text-center">
-          <button onClick={handleClearData} className="text-xs text-gray-400 hover:text-red-500 transition">
-            Reset & test as new user
+          <button onClick={handleClearData} className="text-xs text-red-400 hover:text-red-600 transition">
+            🔄 Clear Data & Test as New User
           </button>
         </div>
       </div>
