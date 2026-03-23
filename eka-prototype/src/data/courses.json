@@ -8,7 +8,7 @@
     "duration": 240,
     "language": "Hindi",
     "instructor": { "id": "3", "name": "Meera Devi", "bio": "20 years of tailoring experience, trained 500+ women", "image": "https://i.pravatar.cc/150?img=9" },
-    "thumbnail": "https://picsum.photos/seed/tailoring/400/250",
+    "thumbnail": "https://i.ibb.co/1hHNhjD/istockphoto-1279972948-612x612.jpg",
     "price": 0, "rating": 4.8, "enrollmentCount": 1250, "completionRate": 78,
     "syllabus": [
       { "id": "l1", "title": "Introduction to Tailoring Tools", "type": "video", "duration": 15 },
@@ -28,7 +28,7 @@
     "duration": 180,
     "language": "Hindi",
     "instructor": { "id": "2", "name": "Anjali Verma", "bio": "Professional makeup artist with 10+ years experience", "image": "https://i.pravatar.cc/150?img=5" },
-    "thumbnail": "https://picsum.photos/seed/makeup/400/250",
+    "thumbnail": "https://i.ibb.co/hxQN2TLd/image-2.webp",
     "price": 2999, "rating": 4.9, "enrollmentCount": 856, "completionRate": 85,
     "syllabus": [
       { "id": "l1", "title": "Makeup Tools & Products", "type": "video", "duration": 20 },
@@ -46,7 +46,7 @@
     "duration": 200,
     "language": "Hindi",
     "instructor": { "name": "Meera Devi", "bio": "Expert chef with 20 years experience", "image": "https://i.pravatar.cc/150?img=9" },
-    "thumbnail": "https://picsum.photos/seed/cooking/400/250",
+    "thumbnail": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=250&fit=crop&q=80",
     "price": 0, "rating": 4.7, "enrollmentCount": 2100, "completionRate": 82,
     "syllabus": [
       { "id": "l1", "title": "Kitchen Setup & Hygiene", "type": "video", "duration": 15 },
@@ -64,7 +64,7 @@
     "duration": 150,
     "language": "English",
     "instructor": { "name": "Priya Malhotra", "bio": "Digital marketing expert, helped 1000+ women start online", "image": "https://i.pravatar.cc/150?img=32" },
-    "thumbnail": "https://picsum.photos/seed/digital/400/250",
+    "thumbnail": "https://i.ibb.co/6c1zvf4h/lp.jpg",
     "price": 1999, "rating": 4.6, "enrollmentCount": 1450, "completionRate": 75,
     "syllabus": [
       { "id": "l1", "title": "Introduction to Digital Marketing", "type": "video", "duration": 20 },
@@ -82,7 +82,7 @@
     "duration": 120,
     "language": "Hindi",
     "instructor": { "name": "Savita Joshi", "bio": "Running successful tiffin service for 8 years", "image": "https://i.pravatar.cc/150?img=36" },
-    "thumbnail": "https://picsum.photos/seed/tiffin/400/250",
+    "thumbnail": "https://i.ibb.co/b5yZG8bB/dabba-service.jpg",
     "price": 0, "rating": 4.5, "enrollmentCount": 980, "completionRate": 88,
     "syllabus": [
       { "id": "l1", "title": "Planning Your Tiffin Business", "type": "video", "duration": 25 },
@@ -99,7 +99,7 @@
     "duration": 300,
     "language": "English",
     "instructor": { "name": "Lakshmi Iyer", "bio": "Certified yoga instructor with 15 years experience", "image": "https://i.pravatar.cc/150?img=24" },
-    "thumbnail": "https://picsum.photos/seed/yoga/400/250",
+    "thumbnail": "https://i.ibb.co/PsMP7BL0/yoga.jpg",
     "price": 4999, "rating": 4.9, "enrollmentCount": 567, "completionRate": 92,
     "syllabus": [
       { "id": "l1", "title": "Introduction to Yoga", "type": "video", "duration": 30 },
@@ -116,7 +116,7 @@
     "duration": 160,
     "language": "Hindi",
     "instructor": { "name": "Rekha Singh", "bio": "Award-winning artisan with 12 years experience", "image": "https://i.pravatar.cc/150?img=20" },
-    "thumbnail": "https://picsum.photos/seed/jewelry/400/250",
+    "thumbnail": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&h=250&fit=crop&q=80",
     "price": 1499, "rating": 4.7, "enrollmentCount": 723, "completionRate": 80,
     "syllabus": [
       { "id": "l1", "title": "Tools & Materials", "type": "video", "duration": 20 },
@@ -133,7 +133,7 @@
     "duration": 100,
     "language": "Hindi",
     "instructor": { "name": "Neha Kapoor", "bio": "English trainer with 8 years experience", "image": "https://i.pravatar.cc/150?img=40" },
-    "thumbnail": "https://picsum.photos/seed/english/400/250",
+    "thumbnail": "https://i.ibb.co/YB7f4QwY/indian-woman-suit-giving-speech-conference.avif",
     "price": 0, "rating": 4.4, "enrollmentCount": 3200, "completionRate": 70,
     "syllabus": [
       { "id": "l1", "title": "Basic Grammar", "type": "video", "duration": 25 },
@@ -150,7 +150,7 @@
     "duration": 90,
     "language": "Hindi",
     "instructor": { "name": "Fatima Khan", "bio": "Award-winning mehendi artist, 15 years experience", "image": "https://i.pravatar.cc/150?img=45" },
-    "thumbnail": "https://picsum.photos/seed/mehendi/400/250",
+    "thumbnail": "https://i.ibb.co/tVc2sB8/mehendi.jpg",
     "price": 1499, "rating": 4.8, "enrollmentCount": 645, "completionRate": 87,
     "syllabus": [
       { "id": "l1", "title": "Mehendi Basics & Cone Making", "type": "video", "duration": 20 },
@@ -167,7 +167,7 @@
     "duration": 180,
     "language": "English",
     "instructor": { "name": "Simran Kaur", "bio": "Professional baker, runs successful home bakery", "image": "https://i.pravatar.cc/150?img=47" },
-    "thumbnail": "https://picsum.photos/seed/bakery/400/250",
+    "thumbnail": "https://i.ibb.co/jky8gq2h/cake.jpg",
     "price": 2499, "rating": 4.7, "enrollmentCount": 892, "completionRate": 81,
     "syllabus": [
       { "id": "l1", "title": "Baking Basics", "type": "video", "duration": 30 },
@@ -184,7 +184,7 @@
     "duration": 80,
     "language": "Hindi",
     "instructor": { "name": "Divya Agarwal", "bio": "Candle making expert, 8 years experience", "image": "https://i.pravatar.cc/150?img=48" },
-    "thumbnail": "https://picsum.photos/seed/candle/400/250",
+    "thumbnail": "https://images.unsplash.com/photo-1602028915047-37269d1a73f7?w=400&h=250&fit=crop&q=80",
     "price": 999, "rating": 4.5, "enrollmentCount": 534, "completionRate": 79,
     "syllabus": [
       { "id": "l1", "title": "Materials & Safety", "type": "video", "duration": 15 },
@@ -201,7 +201,7 @@
     "duration": 220,
     "language": "Hindi",
     "instructor": { "name": "Geeta Sharma", "bio": "Embroidery expert, runs successful boutique", "image": "https://i.pravatar.cc/150?img=49" },
-    "thumbnail": "https://picsum.photos/seed/embroidery/400/250",
+    "thumbnail": "https://i.ibb.co/Q3kp026h/botiue.jpg",
     "price": 1999, "rating": 4.6, "enrollmentCount": 467, "completionRate": 76,
     "syllabus": [
       { "id": "l1", "title": "Embroidery Basics", "type": "video", "duration": 30 },
@@ -218,7 +218,7 @@
     "duration": 120,
     "language": "English",
     "instructor": { "name": "Ritu Malhotra", "bio": "Freelance writer earning 50k+ monthly", "image": "https://i.pravatar.cc/150?img=50" },
-    "thumbnail": "https://picsum.photos/seed/writing/400/250",
+    "thumbnail": "https://i.ibb.co/tpcjw8G0/3.webp",
     "price": 1499, "rating": 4.5, "enrollmentCount": 1123, "completionRate": 73,
     "syllabus": [
       { "id": "l1", "title": "Writing Basics", "type": "video", "duration": 25 },
@@ -235,7 +235,7 @@
     "duration": 60,
     "language": "Hindi",
     "instructor": { "name": "Madhuri Desai", "bio": "Fashion stylist, 12 years experience", "image": "https://i.pravatar.cc/150?img=51" },
-    "thumbnail": "https://picsum.photos/seed/saree/400/250",
+    "thumbnail": "https://i.ibb.co/zWfz0LnD/saree.jpg",
     "price": 799, "rating": 4.4, "enrollmentCount": 389, "completionRate": 85,
     "syllabus": [
       { "id": "l1", "title": "Basic Draping Styles", "type": "video", "duration": 20 },
@@ -252,7 +252,7 @@
     "duration": 100,
     "language": "Hindi",
     "instructor": { "name": "Kamla Devi", "bio": "Traditional recipes expert, 25 years experience", "image": "https://i.pravatar.cc/150?img=52" },
-    "thumbnail": "https://picsum.photos/seed/pickle/400/250",
+    "thumbnail": "https://i.ibb.co/1fkMxR37/pickle.jpg",
     "price": 0, "rating": 4.6, "enrollmentCount": 1567, "completionRate": 88,
     "syllabus": [
       { "id": "l1", "title": "Traditional Recipes", "type": "video", "duration": 30 },
