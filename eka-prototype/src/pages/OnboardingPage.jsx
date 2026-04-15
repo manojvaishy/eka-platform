@@ -126,13 +126,13 @@ function OnboardingPage() {
     if (step > 1) setStep(step - 1);
   };
 
-  const handleComplete = () => {
+  const handleComplete = async () => {
     // Create complete user profile from onboarding data
     const userProfile = {
       id: Date.now().toString(),
       name: formData.name,
       age: parseInt(formData.age),
-      phone: formData.phone,
+      phone: localStorage.getItem('userPhone') || formData.phone,
       profileImage: formData.profileImage || 'https://i.pravatar.cc/150?img=1',
       location: formData.location,
       language: formData.language,
@@ -150,15 +150,27 @@ function OnboardingPage() {
       joinedDate: new Date().toISOString()
     };
     
-    // Save user data
+    // Save to localStorage
     localStorage.setItem('userData', JSON.stringify(userProfile));
     localStorage.setItem('onboardingComplete', 'true');
     localStorage.setItem('selectedLanguage', formData.language);
-    
-    // Set language preference
     setCurrentLanguage(formData.language);
+
+    // Save to Firestore
+    try {
+      const { db } = await import('../firebase');
+      const { doc, setDoc } = await import('firebase/firestore');
+      const phone = localStorage.getItem('userPhone') || 'unknown';
+      await setDoc(doc(db, 'users', `phone_${phone}`), {
+        ...userProfile,
+        profileImage: userProfile.profileImage?.startsWith('data:') ? '[photo uploaded]' : userProfile.profileImage,
+        updatedAt: new Date().toISOString()
+      });
+      console.log('✅ Data saved to Firestore!');
+    } catch (err) {
+      console.log('Firestore save skipped:', err.message);
+    }
     
-    // Navigate to dashboard
     navigate('/dashboard');
   };
 

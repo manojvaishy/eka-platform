@@ -18,6 +18,7 @@ import JobsPage from './pages/JobsPage';
 import ServicesPage from './pages/ServicesPage';
 import CommunityPage from './pages/CommunityPage';
 import EnhancedProfilePage from './pages/EnhancedProfilePage';
+import DatabasePage from './pages/DatabasePage';
 
 // Create Context for global state
 export const AppContext = createContext();
@@ -82,6 +83,7 @@ function App() {
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/community" element={<CommunityPage />} />
             <Route path="/profile" element={<EnhancedProfilePage />} />
+            <Route path="/database" element={<DatabasePage />} />
           </Routes>
         </div>
       </Router>
